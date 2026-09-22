@@ -2,17 +2,13 @@
 
 Connect an Android app to Gemini with Firebase and App Check.
 
-**Status:** Examples available · simulated responses.
+**Status:** Planned · dedicated app coming later.
 
-## Try the available examples
+## Planned app
 
-- [First cloud feature with Firebase AI Logic](firebase-first-feature/README.md)
+An Android app that connects to Gemini through Firebase AI Logic, with App Check, configuration instructions, and recoverable errors.
 
-[Open Recipe Lab](../samples/recipe-lab/README.md) to run these examples. It is the shared Android Studio project; this folder contains the feature guides.
-
-<img src="../docs/images/firebase.png" alt="Firebase AI Logic: simulated response demo in Recipe Lab" width="280" />
-
-Live Firebase inference and real-model ADK reasoning remain unverified. See [verification details](../docs/verification/v0.1.0-fixtures.md).
+The dedicated project will live in this folder. There is no runnable app here yet.
 
 ## Learn step by step
 

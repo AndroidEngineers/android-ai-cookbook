@@ -1,33 +1,19 @@
 # Contributing
 
-Choose one learner outcome from the catalog or open a recipe request. Keep the first pull request small enough to review and reproduce.
-
-## Authoring workflow
-
-1. Copy [the recipe template](docs/recipe-template.md) into `<feature>/<recipe-id>/README.md`. Choose a named feature from the [feature index](docs/features.md).
-2. Add a unique catalog entry with status `draft`. Assign an owner and link a relevant academy lesson.
-3. Put runnable source in `samples/` and synthetic inputs beside the code that uses them. Share a Gradle build only when toolchains are compatible; give incompatible or preview samples their own project under `samples/`.
-4. Supply exact setup and run commands, supported environments, expected output, and a clearly labelled fixture mode where useful.
-5. Exercise at least one failure and recovery path. Explain the decision being taught and give the learner an independent task.
-6. Record the commands/results in an evidence document. Include versions, verification date, tested devices where relevant, and the commit tested. A fixture result must not be presented as a live-provider result.
-7. Run `python3 scripts/validate_catalog.py` and the relevant sample build/tests. Submit source, docs, fixtures, and catalog changes together.
-
-A maintainer coordinates an immutable release tag before a recipe is promoted to a tested status. The validator requires publication metadata but cannot prove the truth of test results or the existence of an external release; reviewers must check those claims.
-
-## Review checklist
-
-- One clear outcome and a working academy lesson link.
-- Source builds and the documented commands reproduce the result.
-- Loading, errors, cancellation, and unsupported configurations are described where relevant.
-- Provider credentials and privileged actions have an appropriate server/application boundary.
-- Costs, device restrictions, and external services are explicit.
-- Fixtures are synthetic and distributable; source licenses and attribution are preserved.
-- Claims match the recorded evidence. Do not label preview APIs as generally available without checking current official documentation.
-
-Do not publish private course material or third-party content without permission. Be respectful and specific when discussing contributions. External pull requests should use deterministic fixtures without access to production secrets.
+Choose one topic from the [feature index](docs/features.md). Each top-level topic folder will hold its own dedicated app or runtime-appropriate project.
 
 ## Where code belongs
 
-Feature folders at the repository root contain learning guides and link to the runnable project. Keep existing shared examples in `samples/recipe-lab`; a feature folder does not imply an independent Android Studio project. Give a future standalone sample a descriptive folder under `samples/` and its own setup instructions when it needs a different runtime or dependency set (for example, JVM ADK).
+Put the project directly in its topic folder, such as `gemini-chat/` or `adk-kotlin/`. Keep its README as the entry point. Each project owns its build files, dependencies, tests, and any synthetic inputs; document the directory to open or command to run. Kotlin JVM topics do not need to become Android apps.
 
-The catalog’s `track` field is the named feature folder, such as `gemini-chat` or `adk-android`. Add only actual recipes to the catalog; a planned feature landing page is not a tested recipe. Link the recipe from its feature README and keep its availability accurate.
+## Adding an app
+
+1. Define one useful learner outcome and use the [recipe template](docs/recipe-template.md) as a guide.
+2. Include prerequisites, exact setup commands, device requirements, and any accounts or costs.
+3. Add a real screenshot or recording and explain the important source files.
+4. Test the main flow and at least one failure and recovery path. Record commands, versions, environment, and results alongside the project.
+5. Distinguish simulated responses from verified live-model behavior. Keep the topic marked Planned until runnable code is included.
+6. Link related academy lessons or official references. Update the root README and feature index when availability changes.
+7. Add CI for the dedicated project when it is introduced.
+
+Preserve attribution and licenses. Do not include credentials, private data, or third-party material without permission. Cloud credentials and privileged actions need an appropriate application or backend boundary.

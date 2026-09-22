@@ -70,6 +70,3 @@ Prerequisite academy lessons: [links]. Explain device unavailability and missing
 [Primary documentation, source inspirations, licenses and attribution where applicable. Date version-sensitive checks. Do not reproduce private course material or another repository's tutorial without the right to reuse it.]
 
 ---
-
-
-Catalog entries live in `docs/recipes.json`. Copy a draft entry, use a unique ID, and follow the field requirements in `scripts/validate_catalog.py`.

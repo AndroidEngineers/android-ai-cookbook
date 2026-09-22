@@ -8,6 +8,6 @@ List exact commands, environment, results, and evidence. Separate fixture, build
 
 ## Limitations and failure behavior
 
-- [ ] Catalog status matches the evidence.
-- [ ] Ran `python3 scripts/validate_catalog.py`.
+- [ ] Topic availability matches the implementation and evidence.
+- [ ] Checked documentation links and ran relevant project checks.
 - [ ] Preserved attribution and included no credentials or private data.

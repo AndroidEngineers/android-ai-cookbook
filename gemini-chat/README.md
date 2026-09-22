@@ -2,19 +2,13 @@
 
 Build chat, streaming responses, structured output, and tool calling.
 
-**Status:** Examples available · simulated responses.
+**Status:** Planned · dedicated app coming later.
 
-## Try the available examples
+## Planned app
 
-- [Fake model, real Compose streaming UI](fixture-streaming-ui/README.md)
-- [Cancel a response when the user changes tasks](lifecycle-cancel-stream/README.md)
-- [Validate structured extraction](validated-extraction/README.md)
+A chat app with streamed responses, conversation history, cancellation, and validated structured output.
 
-[Open Recipe Lab](../samples/recipe-lab/README.md) to run these examples. It is the shared Android Studio project; this folder contains the feature guides.
-
-<img src="../docs/images/streaming.png" alt="Gemini Chat for Android: simulated response demo in Recipe Lab" width="280" />
-
-Live Firebase inference and real-model ADK reasoning remain unverified. See [verification details](../docs/verification/v0.1.0-fixtures.md).
+The dedicated project will live in this folder. There is no runnable app here yet.
 
 ## Learn step by step
 
