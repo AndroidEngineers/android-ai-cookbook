@@ -16,8 +16,10 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Install pinned Android SDK packages
-        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Verify preinstalled Android SDK packages
+        run: |
+          test -d "$ANDROID_HOME/platforms/android-36"
+          test -d "$ANDROID_HOME/build-tools/36.0.0"
       - name: Validate recipe catalog
         run: python3 scripts/validate_catalog.py
       - name: Build, unit tests, instrumented-test compilation, and lint
