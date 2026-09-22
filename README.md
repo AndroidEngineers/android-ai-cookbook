@@ -2,20 +2,24 @@
 
 Practical Android + AI engineering with Kotlin and Jetpack Compose: learn how a feature works, how it fails, and how to build it responsibly.
 
-**Early development: repository foundation is ready; 0 runnable recipes are published.** The six entries below are implementation plans, not finished tutorials. We will mark recipes as tested only after publishing reproducible code and verification evidence.
+**Six runnable recipes, verified with deterministic fixtures.** One Compose app demonstrates streaming, Firebase integration setup, cancellation, validation, bounded retries, and ADK tool approval. Fixture mode needs no cloud account. Live Firebase inference and real-model ADK reasoning are not verified.
+
+[Run Recipe Lab](samples/recipe-lab/README.md) · [Download the fixture prerelease](https://github.com/AndroidEngineers/android-ai-cookbook/releases/tag/v0.1.0-fixtures) · [Verification evidence](docs/verification/v0.1.0-fixtures.md)
+
+<img src="docs/images/streaming.png" alt="Android + AI Cookbook running on an emulator" width="320" />
 
 [Start learning at Android Engineers Academy](https://www.androidengineers.in/roadmap?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=readme) · [Getting started](docs/getting-started.md) · [Contribute](CONTRIBUTING.md)
 
 ## First six recipes
 
-| Planned recipe | What you will learn | Status |
+| Recipe | What you will learn | Status |
 | --- | --- | --- |
-| [Fake model, real Compose streaming UI](recipes/01-cloud-basics/fixture-streaming-ui/README.md) | Show loading, incremental text, completion, and a recoverable error without a provider account. | Draft |
-| [First cloud feature with Firebase AI Logic](recipes/01-cloud-basics/firebase-first-feature/README.md) | Configure a cloud-backed feature and explain how access is protected. | Draft |
-| [Cancel a response when the user changes tasks](recipes/01-cloud-basics/lifecycle-cancel-stream/README.md) | Cancel work when the request changes and reject late output from the old request. | Draft |
-| [Validate structured extraction](recipes/02-structured-output/validated-extraction/README.md) | Parse structured output, reject invalid fields, and separate schema validity from factual accuracy. | Draft |
-| [Retry, timeout, and offline behavior](recipes/01-cloud-basics/bounded-recovery/README.md) | Recover from transient failures within a bounded retry budget without duplicating actions. | Draft |
-| [One safe tool call with ADK on Android](recipes/04-adk-agents/adk-safe-tool/README.md) | Separate an agent tool proposal from the application decision to execute it. | Draft |
+| [Fake model, real Compose streaming UI](recipes/01-cloud-basics/fixture-streaming-ui/README.md) | Show loading, incremental text, completion, and a recoverable error without a provider account. | Tested fixture |
+| [First cloud feature with Firebase AI Logic](recipes/01-cloud-basics/firebase-first-feature/README.md) | Configure a cloud-backed feature and explain how access is protected. | Tested fixture |
+| [Cancel a response when the user changes tasks](recipes/01-cloud-basics/lifecycle-cancel-stream/README.md) | Cancel work when the request changes and reject late output from the old request. | Tested fixture |
+| [Validate structured extraction](recipes/02-structured-output/validated-extraction/README.md) | Parse structured output, reject invalid fields, and separate schema validity from factual accuracy. | Tested fixture |
+| [Retry, timeout, and offline behavior](recipes/01-cloud-basics/bounded-recovery/README.md) | Recover from transient failures within a bounded retry budget without duplicating actions. | Tested fixture |
+| [One safe tool call with ADK on Android](recipes/04-adk-agents/adk-safe-tool/README.md) | Separate an agent tool proposal from the application decision to execute it. | Tested fixture |
 
 ## Browse the tracks
 
@@ -37,8 +41,8 @@ See [compatibility and verification](docs/compatibility.md), the [recipe templat
 ## Repository layout
 
 - `recipes/`: explanations and acceptance criteria, grouped by topic.
-- `samples/`: future runnable projects with their own toolchain requirements.
-- `fixtures/`: future synthetic inputs and expected outputs.
+- `samples/`: the shared runnable Recipe Lab with pinned toolchain requirements.
+- `fixtures/`: the inventory of deterministic inputs and expected outcomes.
 - `experimental/`: future isolated examples using preview APIs.
 - `resources/`: annotated primary documentation.
 - `scripts/`: dependency-free catalog validation.
@@ -53,7 +57,7 @@ cd android-ai-cookbook
 python3 scripts/validate_catalog.py
 ```
 
-This checks documentation/catalog consistency, not Android compilation or model behavior. Those checks belong to each runnable sample when it is added.
+This checks documentation/catalog consistency. To build the Android sample and run its tests, follow [Recipe Lab setup](samples/recipe-lab/README.md). CI builds debug/release APKs, runs unit tests and lint, and compiles instrumented tests. Emulator test evidence is recorded separately.
 
 ## Contribute
 

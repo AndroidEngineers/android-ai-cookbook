@@ -3,90 +3,150 @@
     "id": "fixture-streaming-ui",
     "title": "Fake model, real Compose streaming UI",
     "track": "01-cloud-basics",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/01-cloud-basics/fixture-streaming-ui/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/Streaming.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/ai-android-fundamentals/lesson/kotlin-architecture-for-model-calls?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=fixture-streaming-ui",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   },
   {
     "id": "firebase-first-feature",
     "title": "First cloud feature with Firebase AI Logic",
     "track": "01-cloud-basics",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/01-cloud-basics/firebase-first-feature/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/FirebaseSource.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/firebase-ai-logic/lesson/practice-app-check-and-abuse-protection?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=firebase-first-feature",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   },
   {
     "id": "lifecycle-cancel-stream",
     "title": "Cancel a response when the user changes tasks",
     "track": "01-cloud-basics",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/01-cloud-basics/lifecycle-cancel-stream/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/Streaming.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/gemini-api-android/lesson/practice-conversation-and-streaming?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=lifecycle-cancel-stream",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   },
   {
     "id": "validated-extraction",
     "title": "Validate structured extraction",
     "track": "02-structured-output",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/02-structured-output/validated-extraction/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/Extraction.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/gemini-api-android/lesson/structured-output-and-validation?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=validated-extraction",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   },
   {
     "id": "bounded-recovery",
     "title": "Retry, timeout, and offline behavior",
     "track": "01-cloud-basics",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/01-cloud-basics/bounded-recovery/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/Streaming.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/gemini-api-android/lesson/practice-evaluating-and-operating-gemini-features?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=bounded-recovery",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   },
   {
     "id": "adk-safe-tool",
     "title": "One safe tool call with ADK on Android",
     "track": "04-adk-agents",
-    "status": "draft",
+    "status": "tested-fixture",
     "doc_path": "recipes/04-adk-agents/adk-safe-tool/README.md",
-    "code_path": null,
-    "release_tag": null,
+    "code_path": "samples/recipe-lab/app/src/main/java/in/androidengineers/cookbook/SafeAgent.kt",
+    "release_tag": "v0.1.0-fixtures",
     "academy_url": "https://www.androidengineers.in/roadmap/adk-android/lesson/what-an-in-app-agent-does?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=adk-safe-tool",
     "owner": "AndroidEngineers",
-    "tested_versions": {},
-    "tested_devices": [],
-    "last_verified": null,
-    "evidence_path": null
+    "tested_versions": {
+      "jdk": "17.0.19",
+      "gradle": "9.1.0",
+      "agp": "9.0.1",
+      "compose_bom": "2026.03.01",
+      "compose_compiler": "2.3.20",
+      "firebase_bom": "34.19.0",
+      "adk_android": "0.1.0"
+    },
+    "tested_devices": [
+      "Medium_Phone_API_36.1 AVD; Android 16; API 36; arm64"
+    ],
+    "last_verified": "2026-09-22",
+    "evidence_path": "docs/verification/v0.1.0-fixtures.md"
   }
 ]

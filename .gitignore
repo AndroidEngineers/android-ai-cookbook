@@ -9,3 +9,5 @@ local.properties
 !.env.example
 __pycache__/
 *.pyc
+# Learner-owned Firebase project configuration
+**/google-services.json
