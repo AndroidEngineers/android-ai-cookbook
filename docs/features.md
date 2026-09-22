@@ -1,6 +1,6 @@
 # Browse the cookbook
 
-Choose a feature below. **Available examples use simulated model responses.** Folders marked **Planned** contain a scope and an academy link, not a runnable implementation.
+Choose a feature below. **Available examples use simulated model responses.** Folders marked **Planned** contain a scope and learning resources, not a runnable implementation.
 
 | Feature | Build this | Code today |
 | --- | --- | --- |
@@ -22,5 +22,11 @@ Choose a feature below. **Available examples use simulated model responses.** Fo
 | [Android CLI](../android-cli/README.md) | Build and verify Android projects from the terminal. | Planned |
 | [Android Skills](../android-skills/README.md) | Use Android development skills to guide and check project changes. | Planned |
 | [Create agent skills for Android](../agent-skills/README.md) | Write reusable workflows for your coding agent. | Planned |
+| [Gemma on Android](../gemma/README.md) | Build an offline chat app with a downloadable open model. | Planned |
+| [LiteRT and LiteRT-LM](../litert/README.md) | Run custom models locally and understand the inference runtime. | Planned |
+| [RAG and embeddings](../rag-and-embeddings/README.md) | Search personal notes and answer questions with source citations. | Planned |
+| [FunctionGemma and local tool calling](../functiongemma/README.md) | Turn a natural-language request into an approved app action. | Planned |
+| [ML Kit vision and text](../ml-kit-vision/README.md) | Build OCR, barcode scanning, and other camera-based ML features. | Planned |
+| [MediaPipe for Android](../mediapipe/README.md) | Build live perception features such as gesture and pose detection. | Planned |
 
 [Run the shared sample](../samples/recipe-lab/README.md) · [Cookbook home](../README.md)

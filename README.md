@@ -6,7 +6,7 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 
 ## What do you want to build?
 
-**18 feature and workflow guides.** Open a topic to find its examples, availability, and academy learning path. The six examples you can run today are listed [below](#try-the-code).
+**24 feature and workflow guides.** Open a topic to find its examples, availability, and learning resources. The six examples you can run today are listed [below](#try-the-code).
 
 ### Add AI to your Android app
 
@@ -19,6 +19,17 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 | [Firebase AI Logic](firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. |
 | [Voice AI for Android](voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
 | [Multimodal Android apps](multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. |
+
+### Explore open models, local search, and computer vision
+
+| Topic | What you’ll learn |
+| --- | --- |
+| [Gemma on Android](gemma/README.md) | Build an offline chat app with a downloadable open model. |
+| [LiteRT and LiteRT-LM](litert/README.md) | Run custom models locally and understand the inference runtime. |
+| [RAG and embeddings](rag-and-embeddings/README.md) | Search personal notes and answer questions with source citations. |
+| [FunctionGemma and local tool calling](functiongemma/README.md) | Turn a natural-language request into an approved app action. |
+| [ML Kit vision and text](ml-kit-vision/README.md) | Build OCR, barcode scanning, and other camera-based ML features. |
+| [MediaPipe for Android](mediapipe/README.md) | Build live perception features such as gesture and pose detection. |
 
 ### Build agents and connect tools
 
@@ -56,7 +67,7 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 | [Retries and offline behavior](production-ai/bounded-recovery/README.md) | Try timeouts, errors, and recovery. |
 | [ADK tool approval](adk-android/adk-safe-tool/README.md) | Approve or reject an agent’s proposed action. |
 
-These examples are tested with simulated model responses. Live Firebase inference and real-model ADK reasoning are not yet verified. Other feature folders are marked **Planned** and link to their academy learning paths. See [test results and limitations](docs/verification/v0.1.0-fixtures.md).
+These examples are tested with simulated model responses. Live Firebase inference and real-model ADK reasoning are not yet verified. Other feature folders are marked **Planned** and link to related academy paths or official resources. See [test results and limitations](docs/verification/v0.1.0-fixtures.md).
 
 ## Find your way around
 
@@ -70,15 +81,21 @@ android-ai-cookbook/
 ├── android-skills/
 ├── appfunctions/
 ├── firebase-ai-logic/
+├── functiongemma/
 ├── gemini-chat/
 ├── gemini-in-android-studio/
 ├── gemini-live/
+├── gemma/
 ├── koog/
+├── litert/
 ├── mcp/
+├── mediapipe/
 ├── ml-kit-genai/
+├── ml-kit-vision/
 ├── multimodal-ai/
 ├── on-device-ai/
 ├── production-ai/
+├── rag-and-embeddings/
 ├── voice-ai/
 ├── samples/recipe-lab/        # Runnable Android Studio project
 ├── docs/                     # Setup, feature index, and verification
