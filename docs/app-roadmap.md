@@ -1,12 +1,12 @@
 # App implementation order
 
-One dedicated app for each of the 24 topics. All are currently **Planned**. Names below describe concepts; no branding family has been approved. This is build order, not a promise that all learners must complete every earlier topic.
+One dedicated app for each of the 24 topics. **PocketCards is Building**; the other 23 apps are Planned. Names below describe concepts; no branding family has been approved. This is build order, not a promise that all learners must complete every earlier topic.
 
 Work on one app's complete learning journey at a time. At 10–15 hours/week, estimate each app after its first vertical slice and device/API feasibility check; do not assign speculative completion dates to all 24.
 
 | Order | Topic | App concept | Prerequisites / reusable learning | Core milestone |
 | --- | --- | --- | --- | --- |
-| 1 | [ai-fundamentals](../ai-fundamentals/README.md) | Flashcard generator | None; Kotlin/Compose basics | One validated AI request, editable cards, save/delete, failure recovery |
+| 1 | [ai-fundamentals](../ai-fundamentals/README.md) | PocketCards — flashcard generator | None; Kotlin/Compose basics | One validated AI request, editable cards, save/delete, failure recovery |
 | 2 | [gemini-chat](../gemini-chat/README.md) | Streaming messenger | ai-fundamentals | Conversation ownership, streaming, cancellation, history |
 | 3 | [firebase-ai-logic](../firebase-ai-logic/README.md) | Ingredient meal planner | gemini-chat | Protected mobile inference, structured recipes, saved plans |
 | 4 | [multimodal-ai](../multimodal-ai/README.md) | Camera curiosity app | firebase-ai-logic | Image selection, media preparation, grounded follow-up UI |

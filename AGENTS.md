@@ -2,7 +2,7 @@
 
 ## Product and scope
 - Build one dedicated app per topic. Each top-level topic folder owns an independent project; do not restore a combined demo app or a root Gradle build.
-- Follow [the implementation order](docs/app-roadmap.md). App brand names are undecided; use topic slugs until selected by the user.
+- Follow [the implementation order](docs/app-roadmap.md). The AI Fundamentals app is PocketCards. Other app brand names are undecided; keep their topic slugs until selected by the user.
 - Complete one app, its roadmap lessons, and its codelab before declaring its learning journey released. Keep planned topics labeled Planned.
 - Kotlin JVM agent topics still get an Android client; place server code in the same topic's `server/` directory, with independent setup and tests.
 

@@ -6,7 +6,7 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 
 ## What do you want to build?
 
-**24 feature and workflow guides.** Open a topic to find its examples, availability, and learning resources. **Dedicated apps are planned for these folders; no runnable apps are currently included.**
+**24 feature and workflow guides.** Open a topic to find its examples, availability, and learning resources. **[PocketCards](ai-fundamentals/README.md) is the first app in development.** Its manual/sample flow runs without cloud setup; live AI requires Firebase configuration and is not yet verified. The other 23 apps are planned.
 
 ### Add AI to your Android app
 
@@ -45,7 +45,7 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [AI for Android — start here](ai-fundamentals/README.md) | Learn models, prompts, and when to choose cloud or on-device AI. |
+| [AI for Android — start here](ai-fundamentals/README.md) | PocketCards: turn notes into flashcards and learn the AI fundamentals. |
 | [Production AI on Android](production-ai/README.md) | Handle failures, evaluation, privacy, costs, and rollout. |
 | [Gemini in Android Studio](gemini-in-android-studio/README.md) | Use AI assistance and Agent Mode to implement and debug features. |
 | [Android CLI](android-cli/README.md) | Build and verify Android projects from the terminal. |

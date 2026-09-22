@@ -1,9 +1,7 @@
 # Getting started
 
-Browse the [topic index](features.md), open a topic folder, and follow its academy link or official references.
+Start with [PocketCards](../ai-fundamentals/README.md), the AI Fundamentals app. Open `ai-fundamentals` in Android Studio; its README explains setup and the distinction between the working manual/sample flow and unverified live AI integration.
 
-Dedicated apps will be added directly to their respective top-level topic folders. There are currently no runnable apps, APK downloads, or root Gradle project in this repository.
+Other apps in the [topic index](features.md) remain planned. Each topic owns its independent project; there is no root Gradle build.
 
-When an app is available, its topic README will explain which directory to open, prerequisites, setup, and verification results.
-
-To help build a topic, read the [contribution guide](../CONTRIBUTING.md).
+Read [contribution guidance](../CONTRIBUTING.md) before adding another app.

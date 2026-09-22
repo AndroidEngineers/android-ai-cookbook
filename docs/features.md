@@ -1,6 +1,6 @@
 # Browse the cookbook
 
-Choose a topic below. All dedicated apps are **Planned**. Each top-level topic folder will contain its own project; currently these folders contain learning guides and resources only.
+Choose a topic below. **PocketCards is Building**; the other dedicated apps are Planned. Each top-level topic folder will contain its own project; PocketCards includes its Android project; the other folders currently contain guides and resources.
 
 | Feature | Build this | Code today |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ Choose a topic below. All dedicated apps are **Planned**. Each top-level topic f
 | [Koog for Kotlin](../koog/README.md) | Build AI agents with the Kotlin-based Koog framework. | Planned |
 | [MCP for Android developers](../mcp/README.md) | Connect an Android experience to tools through a controlled backend. | Planned |
 | [Android AppFunctions](../appfunctions/README.md) | Expose app actions with typed inputs, permissions, and confirmation. | Planned |
-| [AI for Android — start here](../ai-fundamentals/README.md) | Learn models, prompts, and when to choose cloud or on-device AI. | Planned |
+| [AI for Android — start here](../ai-fundamentals/README.md) | PocketCards: learn AI fundamentals through a flashcard app. | Building · manual/sample flow; live AI unverified |
 | [Production AI on Android](../production-ai/README.md) | Handle failures, evaluation, privacy, costs, and rollout. | Planned |
 | [Gemini in Android Studio](../gemini-in-android-studio/README.md) | Use AI assistance and Agent Mode to implement and debug features. | Planned |
 | [Android CLI](../android-cli/README.md) | Build and verify Android projects from the terminal. | Planned |

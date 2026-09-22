@@ -1,7 +1,5 @@
 # Compatibility and verification
 
-All dedicated apps are currently planned. No Android, model, or runtime compatibility is claimed for an implemented project yet.
+PocketCards is the first implemented project. See [its verification report](../ai-fundamentals/docs/verification.md) for tested environments and remaining limitations. Other dedicated apps are planned.
 
-Each future project must document its toolchain, model/runtime versions, supported devices, setup requirements, and executed checks. Distinguish compilation, simulated tests, emulator runs, physical-device runs, and live-provider verification.
-
-Keep verification evidence alongside the project and update it when its dependencies or behavior change.
+Each project documents its own toolchain, model/runtime versions, supported devices, and checks. Compilation, fake-based tests, emulator runs, physical-device runs, and live-provider verification are separate evidence.
