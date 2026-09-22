@@ -1,0 +1,195 @@
+{
+  "repository": "https://github.com/android/skills",
+  "commit": "b1f707d90904129b5972b3cc6436b568583effe5",
+  "installed_on": "2026-09-22",
+  "skills": [
+    {
+      "path": "devtools/android-cli",
+      "installed_path": ".agents/skills/android-cli",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "93bef1a066f4cc04ee6e02c7770f1b741aa43b2ca250b77e5626f0fb26cc75a0",
+        "references/interact.md": "86eaab56b5ba8de103632292ce446fb99170cab07d775e3f348a7e49e8b165dd",
+        "references/journeys.md": "cd570a549f4785fadf1f131edcc47d4e692d7eebc37d28a79019cb569f055c86"
+      }
+    },
+    {
+      "path": "system/edge-to-edge",
+      "installed_path": ".agents/skills/edge-to-edge",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8"
+      }
+    },
+    {
+      "path": "navigation/navigation-3",
+      "installed_path": ".agents/skills/navigation-3",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "6fef5b74572fc2e92fd3b0250d79f5da1defb116ac59e93316dabc62296c9ab4",
+        "references/android/guide/navigation/navigation-3/index.md": "157fdf56361b81e06407c44d49e563b2fc3c3d82287effbf10ad1933cb99f565",
+        "references/android/guide/navigation/navigation-3/migration-guide.md": "c09b5e1a8d8f8a60739a3fadd6652d9873ad86b09c8c29e980a4dfc147e8b0c5",
+        "references/android/guide/navigation/navigation-3/recipes/animations.md": "50c54d09fe14cb28f27d02cd9aaad4204dfe975a14bc8292b0bd40f61ad5300d",
+        "references/android/guide/navigation/navigation-3/recipes/basic.md": "f96b02408f311d07c8df16c1867e25598c4bcc1794b52aaaa290a3b377727495",
+        "references/android/guide/navigation/navigation-3/recipes/basicdsl.md": "d077507172cbf9ed6916899ef2d17b5f9aebcc9d3b46d51725d30166949daa14",
+        "references/android/guide/navigation/navigation-3/recipes/basicsaveable.md": "93f01733db02f06a66c54bc5372a88688831bad14ded07ad181a16a12b848110",
+        "references/android/guide/navigation/navigation-3/recipes/bottomsheet.md": "24ac29f14deb7912df58cc1bb504b65e9f31b30dd7daa35a3446f2682a8e57a5",
+        "references/android/guide/navigation/navigation-3/recipes/common-ui.md": "835be092ff7114870543b4f7fb1f0893157c0ad07e00d70682a1256e95f5f3db",
+        "references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md": "bb41f81b08f422aaa201d2716f0feaa22705ebc9154d914ade0c25b3d3052063",
+        "references/android/guide/navigation/navigation-3/recipes/conditional.md": "c34969a85c0d379d6db9af8596f9655c17841cb13bc59477fc29f6e5d12b44c9",
+        "references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md": "9fbfccbf29e03d24de0caa667c826d8971984e5c6b5aba2e3ed9c057357c2fac",
+        "references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md": "f131fe946f25f108601b66dcdb62be6add8cf685437fc78621d8b92dd67bd201",
+        "references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md": "12bf69439480fab3111f4b513118be0128ad574dd9d0aecd199ea37d0f75c4b2",
+        "references/android/guide/navigation/navigation-3/recipes/dialog.md": "b8ac45054125a6aed66c5df682200c74440336d0584d7e1894078954c719200a",
+        "references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md": "45e204c1494179deadb56e9b544c78c6f6f17be4d3d660d841a5db5e4245038f",
+        "references/android/guide/navigation/navigation-3/recipes/material-listdetail.md": "e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29",
+        "references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md": "f0dc47a8d0aaceeefc6a48bf73563b3f9449e608c2ef71140acd5dcd13377e6d",
+        "references/android/guide/navigation/navigation-3/recipes/modular-hilt.md": "1c306c7f687148c9455d6df7be1f692dda9308b85f0ab40b400b9e0926a898a2",
+        "references/android/guide/navigation/navigation-3/recipes/modular-koin.md": "6d8a7925dba9eb06d7e0fbcb9aa92f025cb58fdc09b42c0496f52cf77266f6cd",
+        "references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md": "571f6147f90e1b16aa883ef790b27b6bce58fc7250158077f1d5e5624470fca4",
+        "references/android/guide/navigation/navigation-3/recipes/passingarguments.md": "bc53a9bbabb799865bf8bc3130faeae6e6d2b2838c3e44f48574443b6467e0a5",
+        "references/android/guide/navigation/navigation-3/recipes/results-event.md": "e3f3371d6c5f06a3696c2f90f095bd5c530abd1a8dc59e666631b4e1d2926589",
+        "references/android/guide/navigation/navigation-3/recipes/results-state.md": "17fbf45258b3c928e300adfa07ec320ffbd591e3209236499c74bbb736a1acec",
+        "references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md": "2a19b4d03973c179eb4e4be8f95f9b728af34b55015619dde73dcd72af916e8c",
+        "references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md": "d0cb99ae3054cf463a598fd348d3d9a07aa4b6805ab22121bdc11561a60b1f64",
+        "references/android/guide/navigation/type-safe-destinations.md": "ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb"
+      }
+    },
+    {
+      "path": "jetpack-compose/adaptive",
+      "installed_path": ".agents/skills/adaptive",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "e84db465b42709db43740d233b3c78db9e4251ca5be3495703672d6ec7eec3ca",
+        "references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md": "7a33b15b827dbf21557a2ac808d3e0c2653cf33cc4c58277f2eb94ebfa41aa5f",
+        "references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md": "27637326c6a05b46fb5d69143c32df07128f377067ed2541cc007c2c95741360",
+        "references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md": "6323d0edb988ada38596508c520efc99ae8f9ab8f3954f5bfbfe8ee373e0afc7",
+        "references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md": "94e894a59857662ed784913774a4d0c5bcec7d16468c4c910962a7d806a0e562",
+        "references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md": "fb12005053f5f040c26c5b74a93c11825d5a27f1802ec7748859b24ee2c030c7",
+        "references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md": "60b98093e021bc214d695dd5c20a49b1747f37a51c2a08a8f2ade37ebb4425c0",
+        "references/android/develop/ui/compose/layouts/adaptive/grid/index.md": "97b1e85bc765b97c1930014a554977abddb12bfd0d638b13ab75932dc287a6d0",
+        "references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md": "ef0a67039918022d01ac26983b3cc06c798050736d42ffe692c98e3c4517b45a",
+        "references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md": "1e79df59c053569d5376a618c414b793670fdf35e337d7c8aecce81bf09f90d7",
+        "references/android/develop/ui/compose/tooling/debug.md": "ba62982a079cd1535f904bc784d4a64b1c77bd9ccede9f1e675c48fa44a95397",
+        "references/android/guide/navigation/navigation-3/recipes/material-listdetail.md": "e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29"
+      }
+    },
+    {
+      "path": "testing/testing-setup",
+      "installed_path": ".agents/skills/testing-setup",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "a3562643cc3131a086ab150f11b8b2b16deba3650600192f444bb935d932c07f",
+        "references/android/develop/ui/compose/testing/common-patterns.md": "6e382fbf008b8a0b218d6f798b96dc16d31701eae5ef5753e26e7f25ca110471",
+        "references/android/studio/preview/compose-screenshot-testing.md": "6fa70297631b46449852297c41795ec5cc38038655bb4a0245fa5d4b2d09d1f3",
+        "references/android/training/dependency-injection/hilt-testing.md": "5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814"
+      }
+    },
+    {
+      "path": "device-ai/appfunctions",
+      "installed_path": ".agents/skills/appfunctions",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "d41b75cb243dd48a661d787e9b6eb37ebf6ac8ccb9f215f090f5f72fe515c8bb",
+        "references/adb-interaction-testing.md": "085267c8a1bee76922bbece47e0b27775f8cce9f8af0a0b04ba5ed3c147eb4a9",
+        "references/context.md": "27214efd9f9f3c97c81f3f8905e949f45162b21b4f6ba8625f3907563450bd19",
+        "references/feature-discovery-analysis.md": "fbfe1281c75c54f1e4f2c5f797378ad4e8d73cdd47e92d0b2d8a236616eaa496",
+        "references/implementation-configuration.md": "677698642fcc13c0382a961690896d9403c3d16b4021a522c031a0ebd5b9d2fe",
+        "references/kdoc-refinement-optimization.md": "09e71fb060b3619e14a26c982f113a7d60d28c599b233c6c992438469cfbc2fb",
+        "references/migrate-to-service-entry-point.md": "9f7944fbab543e01b32589b90032d547340ab8370e4c1d31c4a923a840462311"
+      }
+    },
+    {
+      "path": "device-ai/ml-kit-genai-prompt-api",
+      "installed_path": ".agents/skills/ml-kit-genai-prompt-api",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "a8ff20f65d0b4a077f2635dd76763c3235b7427c32c2fbbc15b97e0b1f78742f",
+        "references/get-started.md": "1ccb7145b30bad14f0304d439b92bf629ab0da1a67542035d124462f64880a36",
+        "references/prefix-caching.md": "f306926da65aa6fc0579e079626530fbbba5e7acf2b905a7c14d55391618f86f",
+        "references/prompt-design.md": "fdaeb50d5d87ea94dd477529366d8900447e84bdaf8b21f002654e97283ce1b9",
+        "references/prompt-optimization.md": "7a1f6d33e40f5ba3626972874aba083a6c595a4a2d0fb14496aab734d99a90b7",
+        "references/structured-output.md": "0d2456c2d528fbac9935abcdd6119be130aa11d0d9ceb3ef3e73b806c8ce2bfa",
+        "references/system-instructions.md": "e378a294190bbca7345fef3fb5f1e50be706285259d0d8ed2b511c9944b2a149"
+      }
+    },
+    {
+      "path": "camera/camerax",
+      "installed_path": ".agents/skills/camerax",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "9ff427e29be47a5d87b906341213f6e25cf5be3cd8ff53b09c3577f948f8dde1",
+        "references/camera1-to-camerax.md": "f66838722b779dfe597973f9b612251708d8ea43aaeaa5986fa5e0ced136f911",
+        "references/camera2-to-camerax.md": "539363795cbdcb1e2d361cd3df231ec9b53ba7a903e0f0742d5cbbba1cedd9c9",
+        "references/expert-blueprints.md": "c8bab111ff37ccc4369bd3a88ee3e9932ad1b2f0eea191ebccfde5f01167e50e",
+        "references/foldables.md": "8dc92d22664738c4437133775c2487355b5860694879e5abe553dfffae064b14",
+        "references/immutability.md": "2e510941c469be0ae71ade2e8b7ba300845ef912eb811078a99cbdd6ed347d9b",
+        "references/low-light.md": "63927cc7896848d535b54c3dd56e23304bcef5ffdd33b47c168586c07a3361c3",
+        "references/mlkit-spatial.md": "2bdf0acd7b8a54d5928ee15e45dbdb4d4957246814a81cc03fca6b4b0ee5e5d1",
+        "references/modern-apis.md": "e9a3f77f6c37c55bde47f4b11b19ddb762db5cd7cd3efecabd7959e87f1a39fb",
+        "references/testing.md": "c4ede48673354afcfb6433dfeddec8e741502e3dfd05e3d103dee2e0039ba7a9",
+        "references/thermals.md": "7572166c2e81767092fce274b91b523bbc5a80351b62b294fbac24d28402e162",
+        "references/wear-os.md": "2bb72578d94932b9654478d75631733b93f8aea7fb9daadbe1e61c153896940d",
+        "references/xr.md": "d5e36c7f79528a281638f90bacbf1fe6ca3c5b78e398d49d5a006d7e6ec466b1"
+      }
+    },
+    {
+      "path": "performance/r8-analyzer",
+      "installed_path": ".agents/skills/r8-analyzer",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "d6440dc430734b917d92a040ba8c5c305d10b8530c601a019e63e41d3a772514",
+        "references/CONFIGURATION-ANALYZER.md": "7c2cf0537fab3db2f1dde6aef31c3b416f188ab18cccbf12a2c0eebcbaac9b35",
+        "references/CONFIGURATION.md": "c7bbacde8b8c047be16896f0fc9a55aa805c1dd8abc51c42339deeb3b3a173f1",
+        "references/KEEP-RULES-IMPACT-HIERARCHY.md": "d383eb1673fb6e5ce9b50a633160b0b249529ec61922527302c7cc4bc2f6097e",
+        "references/REDUNDANT-RULES.md": "282ac09478adc085612d1333229a7a61adabe5c4977807cd2a20e69bb3927bb0",
+        "references/REFLECTION-GUIDE.md": "68ce8bdd6f29614b1c19093a9a3c7663ed96dec2740159dcaa718fac27647d69",
+        "references/REPORT_FORMAT.md": "6db6de4b91db7e0e21f22967c24a7f535bfdcfa728f06bf91802983ded4fdee2",
+        "references/android/topic/performance/app-optimization/enable-app-optimization.md": "560048d6c973301d60c4ee058147f16043c50e5490f6e464c45754a38a7a92bb",
+        "references/android/training/testing/other-components/ui-automator.md": "384da2bdff16d8f553acb3aeb9aac93962c4b8d160b40faf4939f4de53a06e92"
+      }
+    },
+    {
+      "path": "security/android-intent-security",
+      "installed_path": ".agents/skills/android-intent-security",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "02576b7430b4e22a965d7a2c87066630336e6f0534119d3403cf96ea24b5b73f"
+      }
+    },
+    {
+      "path": "profilers/android-profiler",
+      "installed_path": ".agents/skills/android-profiler",
+      "files": {
+        "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "6385aeb41e96271fa6295ead577fd03e3b21e0be380f8ca6a20fb13d46feff4c",
+        "analysis/analysis_orchestrator.md": "cd70825d9ed6f6dabf999561b5c69971695cd649001721191b5c829fec80035a",
+        "analysis/workflows/perfetto-sql/perfetto_sql.md": "e0eadf266207020eb91c4a682e22d48baaa2774fa36b1c260f9c04b222e6786d",
+        "analysis/workflows/perfetto-trace-analysis/perfetto_trace_analysis.md": "7a017bb1b6be37c96ec6a8eafd9425e1cd2a4001cc5dc1dcf0c9fe4953b6007a",
+        "analysis/workflows/perfetto-trace-analysis/references/guiding_principles.md": "f7d735f3a34b87fe62cad35f12b564f8c76d6216efce3320a8739ae653bdde90",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/domain_hints_template.md": "3fef8a7bed88a3e11f33ea538a3cb13643e9c9336a9ed1ee027a839737622aaf",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_cpu.md": "32db6b750fa37595002e3abe42976615adf6d1cc6326e05977946cee6cea6e97",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_graphics.md": "dc7136e9ee20c2c343a8a11a18817378f2e982762334136fe36ebfc0371d64e7",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_io.md": "2f832c34053a9a4c816629efe4a46afb4af1923e0b55b4951bf06891ff81be51",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_ipc.md": "ad593787b03e995043d8a6897ffd9021824b4646b1d417e18524ae1dba2be147",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_memory.md": "127c42e239ffc0ddca9fb8e90185892d5f66e007d1feb14da0ab23c57f72d664",
+        "analysis/workflows/perfetto-trace-analysis/references/hints/subsystems/hints_power.md": "07fb29dc89f25a7784330b841394699bc16bc93a9431d9a42029fc7d6afa8328",
+        "analysis/workflows/perfetto-trace-analysis/references/per_candidate_analysis.md": "835fc1eb32badcf0022fe6f988d504cf36a11d91a15a2fa1f5799eb13862f467",
+        "analysis/workflows/perfetto-trace-analysis/references/triage.md": "6db01df73f8c7601ff77cdb5b839d6d78187d2add34646d8007119d7923b8b44",
+        "recording/recording_orchestrator.md": "26a08ecd6f0ed8f80961d46b97db9420699565ea04f81970f74cdc44bf5fc010",
+        "recording/workflows/perfetto-trace-recording/perfetto_trace_recording.md": "1525b6f471e0930c9ea202e73b5ce69ddf9b88fa9a28e8934a0bf1cc7e82c718",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/app_jank.pftxt": "41bcc23a2300eb8913fc51b4e57578701bbb286cd60b549e3acec6b48da125ca",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/cpu_profile.pftxt": "f3185d9d2f73c3123d70f15ef928f130d5a8a221bf5bb8e438a86d1d54707db1",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/java_heap_dump.pftxt": "5b47447092cfdf81f780fd695fce7ca7aa70d5330325ae4f2cc67c504877159d",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/long_background.pftxt": "87b1aa82a782941b15278678b9bd0a44db2d91165b7062b27dd16a6cf3110b71",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/memory_counters.pftxt": "e4298731b59c3a01cdfa5151446d3f3af845491ff8b98694357e09de58fc49df",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/native_heap.pftxt": "e67c5ad23119c08ede35468e2b66ee63317ae55b54e4a06c9b0af2c043459be8",
+        "recording/workflows/perfetto-trace-recording/references/example-configs/sched_cpu.pftxt": "a37c989c0b3aa5d1d609f138d52c0625b728a2ec140ba8603991f562e614d9e0",
+        "recording/workflows/perfetto-trace-recording/references/trace_config_reference.md": "edaeba29593f49a0d789dc29300354372fea2674060c2b64283c9768a8ae2ff1",
+        "references/env_setup.md": "28d10c202ccf759cc7c07649968f3a390d5d984d31b9639d6dac0cd8920a6ee9",
+        "references/perfetto/setup.md": "98946b36a4fd6bd3d8eb4a02a35bf6518783dec8a84f04da2473992e5680a6a5",
+        "references/perfetto/sql.md": "ab667eaeba9243884df539fadb43989ad75f5285553fef7af9364740ce00b1a6"
+      }
+    }
+  ]
+}

@@ -17,3 +17,5 @@ Put the project directly in its topic folder, such as `gemini-chat/` or `adk-kot
 7. Add CI for the dedicated project when it is introduced.
 
 Preserve attribution and licenses. Do not include credentials, private data, or third-party material without permission. Cloud credentials and privileged actions need an appropriate application or backend boundary.
+
+Before implementing an app, read [AGENTS.md](AGENTS.md), [the app order](docs/app-roadmap.md), and [the engineering standards](docs/engineering-standards.md). Use the project-local skills relevant to the change.

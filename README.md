@@ -89,6 +89,10 @@ Browse [all feature guides and their status](docs/features.md). Each topic folde
 
 Start with [AI for Android fundamentals](ai-fundamentals/README.md), then choose the topic for the app you want to build.
 
+## Build plan and engineering
+
+Follow the [24-app implementation order](docs/app-roadmap.md), [engineering standards](docs/engineering-standards.md), and [roadmap/codelab learning contract](docs/learning-contract.md). Development uses [official Android skills and project-local guidance](docs/skills.md).
+
 ## Help grow the cookbook
 
 Have a recipe idea or want to add a sample? Read the [contribution guide](CONTRIBUTING.md) and use the [recipe template](docs/recipe-template.md).
