@@ -32,6 +32,10 @@ No Firebase configuration or production secrets are needed for these checks. Ins
 
 CI builds both variants, runs unit tests and lint, and compiles instrumented tests; CI does not run an emulator.
 
+## Package rename verification
+
+Renamed application ID, namespace, Kotlin packages and source folders to `com.androidengineers.pocketcards`. Re-ran both APK builds, all 13 unit tests, all 5 instrumented tests and lint successfully. Verified the merged manifest uses the new package. Firebase configuration is ignored and absent from tracked files and repository history; these checks ran without it.
+
 ## Remaining release work
 
 - Live Firebase generation, App Check enforcement, unsupported inputs, provider failures, latency and task-level factuality evaluation require an actual project. No live model quality claims are made.

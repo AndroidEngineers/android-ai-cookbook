@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards
+package com.androidengineers.pocketcards
 import android.app.Application
 import com.google.firebase.FirebaseApp
 import com.google.firebase.appcheck.FirebaseAppCheck

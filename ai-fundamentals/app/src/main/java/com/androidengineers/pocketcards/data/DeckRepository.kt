@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards.data
+package com.androidengineers.pocketcards.data
 
 import android.util.AtomicFile
 import java.io.File

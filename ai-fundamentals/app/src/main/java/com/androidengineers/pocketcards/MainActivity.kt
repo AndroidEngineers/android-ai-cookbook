@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards
+package com.androidengineers.pocketcards
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,8 +8,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.firebase.FirebaseApp
-import `in`.androidengineers.pocketcards.data.*
-import `in`.androidengineers.pocketcards.ui.*
+import com.androidengineers.pocketcards.data.*
+import com.androidengineers.pocketcards.ui.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

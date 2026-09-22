@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards.ui
+package com.androidengineers.pocketcards.ui
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateContentSize
@@ -36,7 +36,7 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import kotlinx.serialization.Serializable
-import `in`.androidengineers.pocketcards.data.*
+import com.androidengineers.pocketcards.data.*
 
 @Serializable data object Library : NavKey
 @Serializable data object Create : NavKey

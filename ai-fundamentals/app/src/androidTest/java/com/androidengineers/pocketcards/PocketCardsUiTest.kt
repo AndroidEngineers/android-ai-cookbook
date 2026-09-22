@@ -1,12 +1,12 @@
-package `in`.androidengineers.pocketcards
+package com.androidengineers.pocketcards
 
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.core.app.ApplicationProvider
 import android.content.Context
-import `in`.androidengineers.pocketcards.data.*
-import `in`.androidengineers.pocketcards.ui.*
+import com.androidengineers.pocketcards.data.*
+import com.androidengineers.pocketcards.ui.*
 import kotlinx.coroutines.runBlocking
 import org.junit.Rule
 import org.junit.Test

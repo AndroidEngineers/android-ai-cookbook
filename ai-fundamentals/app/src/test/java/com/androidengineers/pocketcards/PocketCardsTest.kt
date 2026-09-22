@@ -1,7 +1,7 @@
-package `in`.androidengineers.pocketcards
+package com.androidengineers.pocketcards
 
-import `in`.androidengineers.pocketcards.data.*
-import `in`.androidengineers.pocketcards.ui.PocketCardsViewModel
+import com.androidengineers.pocketcards.data.*
+import com.androidengineers.pocketcards.ui.PocketCardsViewModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.test.*
 import org.junit.Assert.*

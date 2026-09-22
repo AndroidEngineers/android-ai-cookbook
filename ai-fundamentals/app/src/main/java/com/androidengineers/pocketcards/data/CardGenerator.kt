@@ -1,11 +1,11 @@
-package `in`.androidengineers.pocketcards.data
+package com.androidengineers.pocketcards.data
 
 import com.google.firebase.Firebase
 import com.google.firebase.ai.ai
 import com.google.firebase.ai.type.GenerativeBackend
 import com.google.firebase.ai.type.Schema
 import com.google.firebase.ai.type.generationConfig
-import `in`.androidengineers.pocketcards.BuildConfig
+import com.androidengineers.pocketcards.BuildConfig
 import kotlinx.coroutines.withTimeout
 
 interface CardGenerator {

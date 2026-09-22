@@ -7,10 +7,10 @@ plugins {
 if (file("google-services.json").exists()) apply(plugin = "com.google.gms.google-services")
 
 android {
-    namespace = "in.androidengineers.pocketcards"
+    namespace = "com.androidengineers.pocketcards"
     compileSdk = 36
     defaultConfig {
-        applicationId = "in.androidengineers.pocketcards"
+        applicationId = "com.androidengineers.pocketcards"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

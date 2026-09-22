@@ -1,8 +1,8 @@
-package `in`.androidengineers.pocketcards.ui
+package com.androidengineers.pocketcards.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import `in`.androidengineers.pocketcards.data.*
+import com.androidengineers.pocketcards.data.*
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.TimeoutCancellationException

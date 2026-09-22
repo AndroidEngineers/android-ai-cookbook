@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards.data
+package com.androidengineers.pocketcards.data
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json

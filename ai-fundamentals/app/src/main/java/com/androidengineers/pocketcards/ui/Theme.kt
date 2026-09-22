@@ -1,4 +1,4 @@
-package `in`.androidengineers.pocketcards.ui
+package com.androidengineers.pocketcards.ui
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*

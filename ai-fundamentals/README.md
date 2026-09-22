@@ -28,9 +28,22 @@ cd ai-fundamentals
 
 Windows: use `gradlew.bat`. Set your local SDK path in `local.properties` or `ANDROID_HOME`; never commit that file. Gradle needs network access for the first dependency download.
 
+## Your Firebase configuration stays local
+
+Everyone running cloud generation uses their own Firebase project. This repository contains no shared Firebase project configuration. Keep your downloaded `google-services.json` only at `app/google-services.json`; Git ignores it, along with local SDK settings and signing keys. Do not force-add it or publish a configured APK as a way to share the sample.
+
+The Android package is `com.androidengineers.pocketcards`. If your Firebase project has an Android app registered under the previous package, add a new Android app with this package in the same Firebase project and download its matching configuration. Do not edit the package inside an old configuration file by hand.
+
+You can confirm the file stays excluded from the repository root:
+
+```sh
+git check-ignore ai-fundamentals/app/google-services.json
+git ls-files '*google-services.json' # must produce no output
+```
+
 ## Enable AI generation
 
-1. Follow [Firebase AI Logic setup](https://firebase.google.com/docs/ai-logic/get-started?platform=android). Register Android package `in.androidengineers.pocketcards` in your project and enable the Gemini Developer API backend through Firebase AI Logic.
+1. Follow [Firebase AI Logic setup](https://firebase.google.com/docs/ai-logic/get-started?platform=android). Register Android package `com.androidengineers.pocketcards` in your project and enable the Gemini Developer API backend through Firebase AI Logic.
 2. Place your configuration at `app/google-services.json` (gitignored). Rebuild; the Google Services plugin applies only when this file is present.
 3. Configure App Check. Register your debug device token privately for development. The release source uses Play Integrity; configure enforcement, project quotas, and any required billing before distributing an app.
 4. Confirm your project has access to `gemini-3.8-flash`, or deliberately change `MODEL_NAME` in `app/build.gradle.kts` to a supported structured-output model. See [structured output documentation](https://firebase.google.com/docs/ai-logic/generate-structured-output?platform=android).
