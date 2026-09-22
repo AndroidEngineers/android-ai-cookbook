@@ -2,12 +2,28 @@
 
 **Turn your notes into knowledge.** A dedicated Kotlin and Jetpack Compose flashcard app for Android AI Fundamentals.
 
-**Status: Building.** Manual decks and the supplied study deck work without cloud setup. The Firebase AI Logic adapter is implemented; live inference requires your Firebase project. A live five-card generation was verified on the emulator with a private local configuration. This is not a completed academy course or a production release.
+**AI Fundamentals · Kotlin · Jetpack Compose · Firebase AI Logic**
 
-<p>
-  <img src="docs/images/library.png" width="280" alt="PocketCards library" />
-  <img src="docs/images/study.png" width="280" alt="PocketCards study screen" />
-</p>
+Paste notes → generate flashcards → review and save → study.
+
+<table>
+<tr><th>Library</th><th>Study</th><th>Dark theme</th></tr>
+<tr>
+<td><img src="docs/images/library.png" width="220" alt="PocketCards library and sample deck" /></td>
+<td><img src="docs/images/study.png" width="220" alt="A real AI-generated flashcard with review actions and daily progress" /></td>
+<td><img src="docs/images/study-dark.png" width="220" alt="PocketCards study screen in dark mode with larger text" /></td>
+</tr>
+</table>
+
+Screenshots from the running Android app. The dark-theme screenshot uses larger system text.
+
+**Status: Runnable sample; learning content in progress.** Manual decks and the supplied study deck work without cloud setup. Live five-card generation has been verified with a private local Firebase configuration. Use your own Firebase project to enable generation. The full academy course and build-from-starter codelab are not yet released.
+
+[Run the app](#run-pocketcards) · [Set up Firebase](#enable-ai-generation) · [Code walkthrough](docs/codelab.md) · [Verification](docs/verification.md)
+
+## What you’ll learn
+
+Connect an Android feature to a cloud model, write a bounded prompt, request structured JSON, validate the result, and let the user review it before saving. Follow the request through Compose, a ViewModel, the Firebase adapter, and local storage; handle cancellation and failure along the way.
 
 ## What you can do
 

@@ -2,11 +2,40 @@
 
 **Build AI features in Android apps with Kotlin and Jetpack Compose.**
 
-Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with ADK? Pick a topic below to find its guided learning path, explore the app planned for it.
+Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with ADK? Explore the runnable samples, then pick a topic to follow its learning path.
+
+## Sample apps
+
+Each sample is an independent Android Studio project, focused on one Android + AI topic.
+
+<table>
+<tr>
+<td width="260" align="center">
+<a href="ai-fundamentals/README.md"><img src="ai-fundamentals/docs/images/study.png" width="240" alt="PocketCards showing an AI-generated flashcard, All / Due / Favorites tabs, and daily progress" /></a>
+</td>
+<td valign="top">
+<h3>PocketCards</h3>
+<p><strong>Turn your notes into knowledge.</strong></p>
+<p>An AI flashcard app: paste study notes, generate questions and answers with Gemini, review the result, and study your saved deck.</p>
+<p><strong>Topic:</strong> AI Fundamentals<br />
+<strong>Level:</strong> Introductory AI integration<br />
+<strong>Status:</strong> Runnable sample · learning content in progress</p>
+<ul>
+<li>Firebase AI Logic and structured model output</li>
+<li>Prompting, validation, cancellation, and failure handling</li>
+<li>Jetpack Compose, Material 3, MVVM, and Navigation 3</li>
+<li>Local decks, favorites, daily review dates, and progress</li>
+<li>Light and dark themes; unit and device tests</li>
+</ul>
+<p><a href="ai-fundamentals/README.md">Browse &amp; run →</a> · <a href="ai-fundamentals/docs/codelab.md">Code walkthrough</a> · <a href="https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=android_ai_cookbook&amp;utm_content=pocketcards_showcase">Learning roadmap</a></p>
+<p><sub>Manual cards and the sample deck work without setup. AI generation uses your own Firebase project. Screenshots show the running app.</sub></p>
+</td>
+</tr>
+</table>
 
 ## What do you want to build?
 
-**24 feature and workflow guides.** Open a topic to find its examples, availability, and learning resources. **[PocketCards](ai-fundamentals/README.md) is the first app in development.** Its manual/sample flow runs without cloud setup; live AI requires Firebase configuration and is not yet verified. The other 23 apps are planned.
+**24 topics · 1 runnable app · 23 planned apps.** PocketCards has a verified live generation flow; its full academy course and build-from-starter codelab are still in progress. Explore the remaining topics below for their planned features and learning resources.
 
 ### Add AI to your Android app
 
