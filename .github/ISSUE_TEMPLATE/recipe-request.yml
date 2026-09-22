@@ -1,0 +1,20 @@
+name: Recipe request
+description: Propose one Android + AI learning outcome.
+title: "[Recipe] "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What should the learner build or understand?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How would we verify it, including one failure case?
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Devices, providers, costs, and relevant documentation

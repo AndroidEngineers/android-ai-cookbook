@@ -1,0 +1,16 @@
+name: Documentation or setup problem
+description: Report an unclear instruction or broken link.
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Recipe or URL
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected result, actual result, and reproduction steps
+      description: Include relevant versions; redact credentials and private data.
+    validations:
+      required: true

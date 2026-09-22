@@ -1,0 +1,11 @@
+# Local development
+.DS_Store
+.idea/
+.gradle/
+**/build/
+local.properties
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
