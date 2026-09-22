@@ -2,7 +2,7 @@
 
 **Turn your notes into knowledge.** A dedicated Kotlin and Jetpack Compose flashcard app for Android AI Fundamentals.
 
-**Status: Building.** Manual decks and the supplied study deck work without cloud setup. The Firebase AI Logic adapter is implemented; live inference requires your Firebase project and remains unverified here. This is not a completed academy course or a production release.
+**Status: Building.** Manual decks and the supplied study deck work without cloud setup. The Firebase AI Logic adapter is implemented; live inference requires your Firebase project. A live five-card generation was verified on the emulator with a private local configuration. This is not a completed academy course or a production release.
 
 <p>
   <img src="docs/images/library.png" width="280" alt="PocketCards library" />
@@ -13,7 +13,8 @@
 
 - Study a hand-authored five-card introduction to AI.
 - Write, edit, save, reopen, and delete your own decks.
-- Reveal answers and reflect on your progress in a study session.
+- Study with a layered flashcard stack, All / Due / Favorites filters, and daily progress.
+- Star cards; use Again for review today or Got it for tomorrow.
 - Configure Firebase to request structured flashcards from notes, review them, then save.
 
 ## Run PocketCards

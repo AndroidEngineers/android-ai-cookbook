@@ -75,7 +75,7 @@ import com.androidengineers.pocketcards.data.*
             entry<Editor> { EditorScreen(state, vm::title, vm::updateCard, vm::addCard, vm::removeCard, vm::save, back) }
             entry<Study> { key ->
                 val deck = (state.decks + sampleDeck).find { it.id == key.deckId }
-                if (deck != null) StudyScreen(deck, onBack = back)
+                if (deck != null) StudyScreen(deck, busy = state.studying, error = state.studyError, onReview = { index, rating, done -> vm.updateReview(deck, index, rating, done) }, onBack = back)
                 else Frame("Your deck", onBack = home) { item { Text(if (state.loading) "Loading your deck…" else "This deck is no longer available.") } }
             }
         })
@@ -151,7 +151,7 @@ import com.androidengineers.pocketcards.data.*
                     }
                 }
                 item { Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                    Text("Your library", style = MaterialTheme.typography.titleLarge); Tag("${state.decks.size} decks", Icons.Rounded.Layers)
+                    Text("Your library", style = MaterialTheme.typography.titleLarge); Tag("${state.decks.size} ${if (state.decks.size == 1) "deck" else "decks"}", Icons.Rounded.Layers)
                 } }
                 if (state.error != null) item { Column { ErrorNote(state.error); TextButton(onClick = onRetry) { Text("Retry loading") } } }
                 if (state.loading) item { LinearProgressIndicator(Modifier.fillMaxWidth()) }
@@ -241,47 +241,6 @@ import com.androidengineers.pocketcards.data.*
         item { Button(onClick = onSave, enabled = !state.saving && state.draft.isNotEmpty(), modifier = Modifier.fillMaxWidth().heightIn(min = 54.dp)) { Text(if (state.saving) "Saving…" else "Save deck") } }
     }
 }
-@Composable private fun StudyScreen(deck: Deck, onBack: () -> Unit) {
-    var index by rememberSaveable(deck.id) { mutableIntStateOf(0) }
-    var revealed by rememberSaveable(deck.id) { mutableStateOf(false) }
-    var known by rememberSaveable(deck.id) { mutableIntStateOf(0) }
-    val finished = index >= deck.cards.size
-    Frame(if (finished) "A little wiser" else "Time to discover", onBack) {
-        item { Text(deck.title, style = MaterialTheme.typography.headlineMedium); Text(deck.origin, Modifier.padding(top = 6.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-        item { LinearProgressIndicator(progress = { (index.toFloat() / deck.cards.size).coerceIn(0f, 1f) }, modifier = Modifier.fillMaxWidth().height(6.dp).clip(CircleShape)) }
-        if (finished) {
-            item { Surface(shape = RoundedCornerShape(28.dp), color = MaterialTheme.colorScheme.primaryContainer) {
-                Column(Modifier.fillMaxWidth().padding(32.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(18.dp)) {
-                    Icon(Icons.Rounded.Celebration, null, Modifier.size(64.dp), tint = MaterialTheme.colorScheme.primary)
-                    Text("Look at you grow.", style = MaterialTheme.typography.headlineLarge, textAlign = TextAlign.Center)
-                    Text("$known of ${deck.cards.size} cards felt familiar.", textAlign = TextAlign.Center)
-                    Text(if (known == deck.cards.size) "A small step, well taken." else "${deck.cards.size - known} could use another look. Learning takes practice.", textAlign = TextAlign.Center)
-                }
-            } }
-            item { Button(onClick = { index = 0; known = 0; revealed = false }, modifier = Modifier.fillMaxWidth()) { Text("Study again") }; TextButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) { Text("Back to library") } }
-        } else {
-            val card = deck.cards[index]
-            item { Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) { Tag("CARD ${index + 1} OF ${deck.cards.size}"); Text(if (revealed) "THE ANSWER" else "A MOMENT TO THINK", style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(top = 8.dp)) } }
-            item {
-                Surface(shape = RoundedCornerShape(28.dp), color = if (revealed) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.primaryContainer, modifier = Modifier.fillMaxWidth().animateContentSize()) {
-                    Column(Modifier.padding(28.dp).heightIn(min = 250.dp), verticalArrangement = Arrangement.SpaceBetween) {
-                        Icon(if (revealed) Icons.Rounded.Lightbulb else Icons.Rounded.AutoAwesome, null, Modifier.size(28.dp))
-                        AnimatedContent(targetState = revealed, label = "cardAnswer") { answer -> Text(if (answer) card.answer else card.question, style = if (answer) MaterialTheme.typography.titleLarge else MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(vertical = 28.dp).semantics { liveRegion = LiveRegionMode.Polite }) }
-                        Text(if (revealed) "Understanding beats memorizing." else "Take your time. There's no timer here.", style = MaterialTheme.typography.bodySmall)
-                    }
-                }
-            }
-            item {
-                if (!revealed) Button(onClick = { revealed = true }, modifier = Modifier.fillMaxWidth().heightIn(min = 54.dp)) { Icon(Icons.Rounded.Visibility, null); Spacer(Modifier.width(10.dp)); Text("Reveal answer") }
-                else Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                    OutlinedButton(onClick = { index++; revealed = false }, modifier = Modifier.weight(1f).heightIn(min = 54.dp)) { Text("Still learning") }
-                    Button(onClick = { known++; index++; revealed = false }, modifier = Modifier.weight(1f).heightIn(min = 54.dp)) { Icon(Icons.Rounded.Check, null, Modifier.size(18.dp)); Spacer(Modifier.width(4.dp)); Text("Got it") }
-                }
-            }
-        }
-    }
-}
-
 @Preview(showBackground = true, widthDp = 412, heightDp = 915)
 @Composable private fun LibraryPreview() { PocketTheme { LibraryScreen(PocketState(loading = false), {}, {}, {}, {}, {}) } }
 @Preview(showBackground = true, widthDp = 412, heightDp = 915, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)

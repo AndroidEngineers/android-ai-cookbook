@@ -8,7 +8,7 @@ Follow [the README](../README.md). Open the `ai-fundamentals` project, build deb
 
 ## 2. Study the supplied deck
 
-Choose **Try a sample deck**. Think about the question, reveal the answer, then choose **Still learning** or **Got it**. Complete five cards and inspect the session summary. Read `StudyScreen` in `PocketCardsApp.kt`: the rating describes this session, not a spaced-repetition schedule.
+Choose **Try a sample deck**. Think about the question, reveal the answer, then choose **Again** or **Got it**. Complete five cards and check the completion screen. Open Due: Got it cards return tomorrow; Again cards remain due today. Star a card and find it in Favorites. Daily progress counts distinct cards reviewed today in this deck. Read `StudyScreen.kt` and `PocketCardsViewModel.updateReview`.
 
 ## 3. Create your own cards
 

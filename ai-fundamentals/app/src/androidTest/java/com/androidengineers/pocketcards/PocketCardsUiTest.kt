@@ -39,6 +39,34 @@ class PocketCardsUiTest {
         compose.onNodeWithText("Got it").performScrollTo().performClick()
         compose.onNodeWithText("What is inference?").assertIsDisplayed()
     }
+    @Test fun completingLastCardAndRestartingDoesNotCrash() {
+        launch(); compose.onNodeWithText("Try a sample deck").performScrollTo().performClick()
+        repeat(5) {
+            compose.onNodeWithText("Reveal answer").performScrollTo().performClick()
+            compose.onNodeWithText("Got it").performScrollTo().performClick()
+            compose.waitForIdle()
+        }
+        compose.onNodeWithText("Deck complete!").assertIsDisplayed()
+        compose.onNodeWithText("Study again").performScrollTo().performClick()
+        compose.onNodeWithText("What is a prompt?").assertIsDisplayed()
+        compose.onNodeWithText("Due").performClick()
+        compose.onNodeWithText("No due cards").assertIsDisplayed()
+    }
+    @Test fun favoritesFilterAndAgainOnLastCardWork() {
+        launch(); compose.onNodeWithText("Try a sample deck").performScrollTo().performClick()
+        compose.onNodeWithText("Favorites").performClick()
+        compose.onNodeWithText("No favorites cards").assertIsDisplayed()
+        compose.onNodeWithText("All").performClick()
+        compose.onNodeWithContentDescription("Add favorite").performClick()
+        compose.waitForIdle()
+        compose.onNodeWithText("Favorites").performClick()
+        compose.onNodeWithText("What is a prompt?").assertIsDisplayed()
+        compose.onNodeWithText("Reveal answer").performScrollTo().performClick()
+        compose.onNodeWithText("Again").performScrollTo().performClick()
+        compose.onNodeWithText("Deck complete!").assertIsDisplayed()
+        compose.onNodeWithText("Study again").performClick()
+        compose.onNodeWithContentDescription("Remove favorite").assertExists()
+    }
     @Test fun missingCloudSetupStillAllowsManualDeck() {
         launch(); compose.onNodeWithContentDescription("Create deck").performClick()
         compose.onNodeWithText("Generate flashcards").assertIsNotEnabled()
@@ -61,8 +89,9 @@ class PocketCardsUiTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val f = File(context.cacheDir, "decks-${System.nanoTime()}.json")
         try {
-            FileDeckRepository(f).save(sampleDeck)
-            assertEquals(sampleDeck, FileDeckRepository(f).load().single())
+            val reviewed = sampleDeck.copy(cards = sampleDeck.cards.map { it.copy(favorite = true, dueDay = 123, reviewedDay = 122) })
+            FileDeckRepository(f).save(reviewed)
+            assertEquals(reviewed, FileDeckRepository(f).load().single())
             FileDeckRepository(f).delete(sampleDeck.id)
             assertTrue(FileDeckRepository(f).load().isEmpty())
         } finally { f.delete() }

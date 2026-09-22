@@ -38,9 +38,19 @@ Renamed application ID, namespace, Kotlin packages and source folders to `com.an
 
 ## Remaining release work
 
-- Live Firebase generation, App Check enforcement, unsupported inputs, provider failures, latency and task-level factuality evaluation require an actual project. No live model quality claims are made.
+- Broader live evaluation of unsupported inputs, provider failures, latency and factuality remains pending beyond the single successful generation recorded below.
 - Unsaved notes and drafts survive configuration changes through the ViewModel, but are not persisted across process death. Saved decks use atomic local storage. Session ratings are not a spaced-repetition algorithm.
 - Release APK is unsigned and shrinking is disabled. Play distribution, release attestation and a shrunk release need separate verification.
 - API 26 devices, physical devices, tablets, TalkBack, landscape, process recreation and the full large-font matrix need broader coverage before release.
 - Lint has no errors; warnings identify newer dependency/target versions and a redundant v26 icon resource qualifier. This first implementation retains the Android CLI template's pinned toolchain; a tested upgrade is separate work.
 - The README walkthrough is available. Website lessons, a build-from-starter codelab, and source checkpoints are still pending and must align before the learning journey is released.
+
+## Reference UI and last-card crash fix
+
+The device crash log showed `IndexOutOfBoundsException: Index 5 out of bounds for length 5` in the old deferred study layout. The new study screen resolves a safe card snapshot before rendering and handles completion separately. Rating actions advance only after a successful save; duplicate in-flight ratings are ignored.
+
+The reference-style UI adds a compact header, layered lavender cards, functional All/Due/Favorites tabs, Again/Got it actions and persisted per-deck daily progress. Existing saved decks decode with default review metadata. The generated-response DTO remains separate so the model cannot supply review metadata.
+
+Validation: debug and release builds, lint, 15 unit tests and 7 emulator tests passed. Device regressions cover finishing all five cards, restarting, an empty Due queue, favoriting/filtering, Again on the final favorite, and persistence of review metadata. The study screen was also visually checked in dark mode at 1.5× font scale. The actual light-theme screen is captured in `images/study.png`. Broader accessibility/device testing remains pending.
+
+Live Firebase generation was also verified separately after registering the private emulator debug token: the photosynthesis passage produced five source-supported cards that were saved and opened in study mode. This is one successful example, not a general quality evaluation. No Firebase configuration, debug token or configured APK is published.

@@ -66,4 +66,25 @@ class PocketCardsTest {
     @Test fun doubleGenerateMakesOneRequest() = runTest(dispatcher) {
         val gen = Generator(); val vm = PocketCardsViewModel(Memory(), gen); runCurrent(); vm.notes(notes); vm.generate(); vm.generate(); advanceUntilIdle(); assertEquals(1, gen.calls)
     }
+    @Test fun ratingWaitsForPersistenceAndRejectsDuplicateTaps() = runTest(dispatcher) {
+        val repo = Memory().apply { fail = true }; val vm = PocketCardsViewModel(repo, Generator()); runCurrent()
+        var advanced = 0
+        vm.updateReview(sampleDeck, 4, true) { advanced++ }; advanceUntilIdle()
+        assertEquals(0, advanced); assertNotNull(vm.state.value.studyError)
+        repo.fail = false
+        vm.updateReview(sampleDeck, 4, true) { advanced++ }
+        vm.updateReview(sampleDeck, 4, true) { advanced++ }; advanceUntilIdle()
+        assertEquals(1, advanced); assertNull(vm.state.value.studyError)
+        vm.updateReview(sampleDeck, 4, null); advanceUntilIdle()
+        val card = repo.decks.single().cards[4]
+        assertTrue(card.favorite)
+        assertEquals(java.time.LocalDate.now().toEpochDay(), card.reviewedDay)
+        assertEquals(card.reviewedDay + 1, card.dueDay)
+    }
+    @Test fun modelCannotSetReviewMetadata() {
+        assertThrows(Exception::class.java) {
+            CardValidation.parse("""{"cards":[{"question":"Q","answer":"A","favorite":true}]}""")
+        }
+    }
+
 }

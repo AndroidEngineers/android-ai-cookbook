@@ -4,19 +4,20 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.util.UUID
 
-@Serializable data class Flashcard(val question: String, val answer: String)
+@Serializable data class Flashcard(val question: String, val answer: String, val favorite: Boolean = false, val dueDay: Long = 0, val reviewedDay: Long = -1)
 @Serializable data class Deck(val id: String = UUID.randomUUID().toString(), val title: String, val cards: List<Flashcard>, val origin: String = "Created by you", val createdAt: Long = System.currentTimeMillis())
-@Serializable private data class GeneratedCards(val cards: List<Flashcard>)
+@Serializable private data class GeneratedCard(val question: String, val answer: String)
+@Serializable private data class GeneratedCards(val cards: List<GeneratedCard>)
 object CardValidation {
     const val MAX_NOTES = 8000
     private val json = Json { ignoreUnknownKeys = false }
     fun parse(text: String): List<Flashcard> {
         require(text.length <= 30000) { "The response was too large. Try shorter notes." }
-        return validate(json.decodeFromString<GeneratedCards>(text).cards)
+        return validate(json.decodeFromString<GeneratedCards>(text).cards.map { Flashcard(it.question, it.answer) })
     }
     fun validate(cards: List<Flashcard>): List<Flashcard> {
         require(cards.size in 1..10) { "A deck needs between 1 and 10 cards." }
-        val cleaned = cards.map { Flashcard(it.question.trim(), it.answer.trim()) }
+        val cleaned = cards.map { it.copy(question = it.question.trim(), answer = it.answer.trim()) }
         require(cleaned.all { it.question.length in 1..300 && it.answer.length in 1..1500 }) { "Each card needs a question (up to 300 characters) and an answer (up to 1,500)." }
         require(cleaned.map { it.question.lowercase() }.distinct().size == cleaned.size) { "Each question should be different." }
         return cleaned

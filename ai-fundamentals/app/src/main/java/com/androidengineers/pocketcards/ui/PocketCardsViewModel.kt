@@ -14,6 +14,7 @@ import kotlinx.coroutines.launch
 data class PocketState(
     val decks: List<Deck> = emptyList(), val loading: Boolean = true,
     val notes: String = "", val title: String = "", val draft: List<Flashcard> = emptyList(),
+    val studying: Boolean = false, val studyError: String? = null,
     val generating: Boolean = false, val saving: Boolean = false, val error: String? = null,
     val draftOrigin: String = "Created by you", val editingId: String? = null, val revision: Int = 0
 )
@@ -68,6 +69,23 @@ class PocketCardsViewModel(private val repository: DeckRepository, private val g
         viewModelScope.launch {
             try { val all = repository.save(deck); mutable.update { it.copy(decks = all, saving = false, draft = emptyList(), editingId = null, revision = it.revision + 1) } }
             catch (_: Exception) { mutable.update { it.copy(saving = false, error = "Couldn't save this deck. Your cards are still here; please retry.") } }
+        }
+    }
+    fun updateReview(deck: Deck, index: Int, gotIt: Boolean?, onSaved: () -> Unit = {}) {
+        if (state.value.studying) return
+        val current = state.value.decks.find { it.id == deck.id } ?: deck
+        val card = current.cards.getOrNull(index) ?: return
+        val today = java.time.LocalDate.now().toEpochDay()
+        val updated = if (gotIt == null) card.copy(favorite = !card.favorite)
+            else card.copy(dueDay = today + if (gotIt) 1 else 0, reviewedDay = today)
+        mutable.update { it.copy(studying = true, studyError = null) }
+        viewModelScope.launch {
+            try {
+                val all = repository.save(current.copy(cards = current.cards.mapIndexed { i, c -> if (i == index) updated else c }))
+                mutable.update { it.copy(decks = all, studying = false) }
+                onSaved()
+            } catch (e: CancellationException) { throw e }
+            catch (_: Exception) { mutable.update { it.copy(studying = false, studyError = "Couldn't save your progress. Please try again.") } }
         }
     }
     fun delete(id: String) { viewModelScope.launch {
