@@ -17,9 +17,19 @@ Paste notes → generate flashcards → review and save → study.
 
 Screenshots from the running Android app. The dark-theme screenshot uses larger system text.
 
-**Status: Runnable sample; learning content in progress.** Manual decks and the supplied study deck work without cloud setup. Live five-card generation has been verified with a private local Firebase configuration. Use your own Firebase project to enable generation. The full academy course and build-from-starter codelab are not yet released.
+**Status: Runnable sample; learning content in progress.** Manual decks and the supplied study deck work without cloud setup. Live five-card generation has been verified with a private local Firebase configuration. Use your own Firebase project to enable generation. The companion roadmap and run-and-extend codelab are linked below. The full academy course and independent clean-setup walkthrough remain in progress.
 
 [Run the app](#run-pocketcards) · [Set up Firebase](#enable-ai-generation) · [Code walkthrough](docs/codelab.md) · [Verification](docs/verification.md)
+
+## Learn with PocketCards
+
+Follow one app from concepts to working code:
+
+1. [Learning roadmap](https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=pocketcards_readme) — understand prompts, model behavior, architecture, privacy and evaluation through detailed lessons and exercises.
+2. [Hands-on codelab](https://www.androidengineers.in/codelabs/pocketcards-ai-flashcards?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=pocketcards_readme) — clone the tested revision, configure your own Firebase project, trace real Kotlin code, and implement a test-first improvement.
+3. [Local code walkthrough](docs/codelab.md) — explore the sample directly from this repository.
+
+The academy codelab uses commit `c527701` so the code matches its explanations. Start from the completed sample and extend it; there is no empty starter project. Follow the clone commands in the codelab to check out that revision.
 
 ## What you’ll learn
 

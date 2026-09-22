@@ -27,7 +27,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 <li>Local decks, favorites, daily review dates, and progress</li>
 <li>Light and dark themes; unit and device tests</li>
 </ul>
-<p><a href="ai-fundamentals/README.md">Browse &amp; run →</a> · <a href="ai-fundamentals/docs/codelab.md">Code walkthrough</a> · <a href="https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=android_ai_cookbook&amp;utm_content=pocketcards_showcase">Learning roadmap</a></p>
+<p><a href="ai-fundamentals/README.md">Browse &amp; run →</a> · <a href="https://www.androidengineers.in/codelabs/pocketcards-ai-flashcards?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=android_ai_cookbook&amp;utm_content=pocketcards_showcase">Hands-on codelab</a> · <a href="https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=android_ai_cookbook&amp;utm_content=pocketcards_showcase">Learning roadmap</a></p>
 <p><sub>Manual cards and the sample deck work without setup. AI generation uses your own Firebase project. Screenshots show the running app.</sub></p>
 </td>
 </tr>
