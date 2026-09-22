@@ -1,66 +1,69 @@
 # Android + AI Cookbook
 
-Practical Android + AI engineering with Kotlin and Jetpack Compose: learn how a feature works, how it fails, and how to build it responsibly.
+**Build AI features in Android apps with Kotlin and Jetpack Compose.**
 
-**Six runnable recipes, verified with deterministic fixtures.** One Compose app demonstrates streaming, Firebase integration setup, cancellation, validation, bounded retries, and ADK tool approval. Fixture mode needs no cloud account. Live Firebase inference and real-model ADK reasoning are not verified.
+Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with ADK? Pick a topic below to find its guided learning path, then try the code examples available here.
 
-[Run Recipe Lab](samples/recipe-lab/README.md) · [Download the fixture prerelease](https://github.com/AndroidEngineers/android-ai-cookbook/releases/tag/v0.1.0-fixtures) · [Verification evidence](docs/verification/v0.1.0-fixtures.md)
+## What do you want to build?
 
-<img src="docs/images/streaming.png" alt="Android + AI Cookbook running on an emulator" width="320" />
+**18 learning paths.** Each topic links to Android Engineers Academy for lessons and exercises. Cookbook code is growing; the six examples you can run today are listed [below](#try-the-code).
 
-[Start learning at Android Engineers Academy](https://www.androidengineers.in/roadmap?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=readme) · [Getting started](docs/getting-started.md) · [Contribute](CONTRIBUTING.md)
+### Add AI to your Android app
 
-## First six recipes
+| Topic | What you’ll learn |
+| --- | --- |
+| [Gemini Live in Android](https://www.androidengineers.in/roadmap/gemini-live-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build real-time conversations with audio, interruptions, and reconnects. |
+| [ML Kit GenAI + Gemini Nano](https://www.androidengineers.in/roadmap/gemini-nano-ml-kit?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Add on-device text and image features with capability checks. |
+| [On-device AI for Android](https://www.androidengineers.in/roadmap/on-device-ai-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Run models locally and understand downloads, memory, and device support. |
+| [Gemini API for Android](https://www.androidengineers.in/roadmap/gemini-api-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build chat, streaming responses, structured output, and tool calling. |
+| [Firebase AI Logic](https://www.androidengineers.in/roadmap/firebase-ai-logic?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Connect an Android app to Gemini with Firebase and App Check. |
+| [Voice AI for Android](https://www.androidengineers.in/roadmap/voice-ai-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
+| [Multimodal Android apps](https://www.androidengineers.in/roadmap/multimodal-android-ai?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Combine camera, images, audio, and text in an AI feature. |
 
-| Recipe | What you will learn | Status |
-| --- | --- | --- |
-| [Fake model, real Compose streaming UI](recipes/01-cloud-basics/fixture-streaming-ui/README.md) | Show loading, incremental text, completion, and a recoverable error without a provider account. | Tested fixture |
-| [First cloud feature with Firebase AI Logic](recipes/01-cloud-basics/firebase-first-feature/README.md) | Configure a cloud-backed feature and explain how access is protected. | Tested fixture |
-| [Cancel a response when the user changes tasks](recipes/01-cloud-basics/lifecycle-cancel-stream/README.md) | Cancel work when the request changes and reject late output from the old request. | Tested fixture |
-| [Validate structured extraction](recipes/02-structured-output/validated-extraction/README.md) | Parse structured output, reject invalid fields, and separate schema validity from factual accuracy. | Tested fixture |
-| [Retry, timeout, and offline behavior](recipes/01-cloud-basics/bounded-recovery/README.md) | Recover from transient failures within a bounded retry budget without duplicating actions. | Tested fixture |
-| [One safe tool call with ADK on Android](recipes/04-adk-agents/adk-safe-tool/README.md) | Separate an agent tool proposal from the application decision to execute it. | Tested fixture |
+### Build agents and connect tools
 
-## Browse the tracks
+| Topic | What you’ll learn |
+| --- | --- |
+| [ADK for Kotlin](https://www.androidengineers.in/roadmap/adk-kotlin?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build JVM agents with tools, sessions, and orchestration. |
+| [ADK for Android](https://www.androidengineers.in/roadmap/adk-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Put an agent in your Android app with lifecycle-aware sessions and local tools. |
+| [Koog for Kotlin](https://www.androidengineers.in/roadmap/koog?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build AI agents with the Kotlin-based Koog framework. |
+| [MCP for Android developers](https://www.androidengineers.in/roadmap/mcp-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Connect an Android experience to tools through a controlled backend. |
+| [Android AppFunctions](https://www.androidengineers.in/roadmap/android-appfunctions?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Expose app actions with typed inputs, permissions, and confirmation. |
 
-- [Cloud Basics](recipes/01-cloud-basics/README.md) — Cloud requests, streaming, lifecycle ownership, and failure recovery.
-- [Structured Output](recipes/02-structured-output/README.md) — Parse and validate model output before using it in application state.
-- [On Device](recipes/03-on-device/README.md) — Device capabilities, model readiness, local inference, and fallback behavior.
-- [Adk Agents](recipes/04-adk-agents/README.md) — Agent tools, sessions, user approval, and cancellation on Android.
-- [Mcp Appfunctions](recipes/05-mcp-appfunctions/README.md) — Tool servers, app capabilities, caller identity, and permissions.
-- [Voice Multimodal](recipes/06-voice-multimodal/README.md) — Audio, camera input, interruptions, and reconnect behavior.
-- [Retrieval](recipes/07-retrieval/README.md) — Retrieve evidence, inspect citations, and handle unsupported answers.
-- [Production](recipes/08-production/README.md) — Evaluation, observability, model changes, cost controls, and rollout.
+### Learn the foundations and ship your app
 
-## What makes a recipe ready?
+| Topic | What you’ll learn |
+| --- | --- |
+| [AI for Android — start here](https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Learn models, prompts, and when to choose cloud or on-device AI. |
+| [Production AI on Android](https://www.androidengineers.in/roadmap/production-ai-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Handle failures, evaluation, privacy, costs, and rollout. |
+| [Gemini in Android Studio](https://www.androidengineers.in/roadmap/gemini-android-studio?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Use AI assistance and Agent Mode to implement and debug features. |
+| [Android CLI](https://www.androidengineers.in/roadmap/android-cli?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Build and verify Android projects from the terminal. |
+| [Android Skills](https://www.androidengineers.in/roadmap/android-skills?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Use Android development skills to guide and check project changes. |
+| [Create agent skills for Android](https://www.androidengineers.in/roadmap/agent-skills-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index) | Write reusable workflows for your coding agent. |
 
-A ready recipe includes runnable code, prerequisites, tested versions, expected behavior, failure cases, a small exercise, and a next lesson. Fixture-mode and live-provider verification are separate claims. A successful build is not evidence of a real device or model run.
+## Try the code
 
-See [compatibility and verification](docs/compatibility.md), the [recipe template](docs/recipe-template.md), and the [machine-readable catalog](catalog/recipes.json).
+**One Android app, six examples. No cloud account needed for the default demo.**
 
-## Repository layout
+[Run the sample in Android Studio](samples/recipe-lab/README.md) · [Download the demo APK](https://github.com/AndroidEngineers/android-ai-cookbook/releases/tag/v0.1.0-fixtures)
 
-- `recipes/`: explanations and acceptance criteria, grouped by topic.
-- `samples/`: the shared runnable Recipe Lab with pinned toolchain requirements.
-- `fixtures/`: the inventory of deterministic inputs and expected outcomes.
-- `experimental/`: future isolated examples using preview APIs.
-- `resources/`: annotated primary documentation.
-- `scripts/`: dependency-free catalog validation.
+| Example | What you can try |
+| --- | --- |
+| [Streaming in Compose](recipes/01-cloud-basics/fixture-streaming-ui/README.md) | Display a response as it arrives. |
+| [Firebase AI Logic setup](recipes/01-cloud-basics/firebase-first-feature/README.md) | Explore the integration and configure your Firebase project. |
+| [Cancel a response](recipes/01-cloud-basics/lifecycle-cancel-stream/README.md) | Stop a request and prevent old results from updating the screen. |
+| [Structured output](recipes/02-structured-output/validated-extraction/README.md) | Turn model output into validated app data. |
+| [Retries and offline behavior](recipes/01-cloud-basics/bounded-recovery/README.md) | Try timeouts, errors, and recovery. |
+| [ADK tool approval](recipes/04-adk-agents/adk-safe-tool/README.md) | Approve or reject an agent’s proposed action. |
 
-## Validate the catalog
+These examples are tested with simulated model responses. Live Firebase inference and real-model ADK reasoning are not yet verified. The other topics above currently link to academy learning paths; their cookbook samples are not available yet. See [test results and limitations](docs/verification/v0.1.0-fixtures.md).
 
-Python 3.11 or newer is required. No Android SDK or model account is needed for this check.
+## New to Android + AI?
 
-```sh
-git clone https://github.com/AndroidEngineers/android-ai-cookbook.git
-cd android-ai-cookbook
-python3 scripts/validate_catalog.py
-```
+Start with [AI for Android fundamentals](https://www.androidengineers.in/roadmap/ai-android-fundamentals?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index), try [streaming in Compose](recipes/01-cloud-basics/fixture-streaming-ui/README.md), then choose the topic for the app you want to build.
 
-This checks documentation/catalog consistency. To build the Android sample and run its tests, follow [Recipe Lab setup](samples/recipe-lab/README.md). CI builds debug/release APKs, runs unit tests and lint, and compiles instrumented tests. Emulator test evidence is recorded separately.
+## Help grow the cookbook
 
-## Contribute
+Have a recipe idea or want to add a sample? Read the [contribution guide](CONTRIBUTING.md) and use the [recipe template](docs/recipe-template.md).
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Start with one learning outcome, discuss its scope, and include evidence rather than promises. Do not include credentials, private data, or uncredited third-party code.
-
-Maintained by [Android Engineers](https://github.com/AndroidEngineers). Licensed under [Apache 2.0](LICENSE). This is a community project, not an official Google, Android, or JetBrains SDK repository.
+Maintained by [Android Engineers](https://github.com/AndroidEngineers) · [Android Engineers Academy](https://www.androidengineers.in/roadmap?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=readme) · [Apache 2.0](LICENSE)
