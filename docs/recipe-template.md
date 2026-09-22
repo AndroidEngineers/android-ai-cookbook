@@ -72,4 +72,4 @@ Prerequisite academy lessons: [links]. Explain device unavailability and missing
 ---
 
 
-Catalog entries live in `catalog/recipes.json`. Copy a draft entry, use a unique ID, and follow the field requirements in `scripts/validate_catalog.py`.
+Catalog entries live in `docs/recipes.json`. Copy a draft entry, use a unique ID, and follow the field requirements in `scripts/validate_catalog.py`.

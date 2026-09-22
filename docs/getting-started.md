@@ -1,6 +1,6 @@
 # Getting started
 
-Choose a topic from the [feature index](../recipes/README.md), which distinguishes available examples from planned samples.
+Choose a topic from the [feature index](features.md), which distinguishes available examples from planned samples.
 
 ## Run a recipe
 
@@ -13,7 +13,7 @@ Start with [Recipe Lab](../samples/recipe-lab/README.md). It contains six tabs a
 5. Inject transient failures, offline behavior, and timeouts.
 6. Run actual ADK tool dispatch with a deterministic model and an exact approval boundary.
 
-The [catalog](../catalog/recipes.json) links each recipe to an academy lesson. The [verification report](verification/v0.1.0-fixtures.md) distinguishes builds, unit tests, emulator tests, and unverified cloud/device paths.
+The [catalog](recipes.json) links each recipe to an academy lesson. The [verification report](verification/v0.1.0-fixtures.md) distinguishes builds, unit tests, emulator tests, and unverified cloud/device paths.
 
 ## Contribute
 

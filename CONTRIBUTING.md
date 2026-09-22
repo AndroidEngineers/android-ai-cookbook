@@ -4,9 +4,9 @@ Choose one learner outcome from the catalog or open a recipe request. Keep the f
 
 ## Authoring workflow
 
-1. Copy [the recipe template](docs/recipe-template.md) into `recipes/<feature>/<recipe-id>/README.md`. Choose a named feature from the [feature index](recipes/README.md).
+1. Copy [the recipe template](docs/recipe-template.md) into `<feature>/<recipe-id>/README.md`. Choose a named feature from the [feature index](docs/features.md).
 2. Add a unique catalog entry with status `draft`. Assign an owner and link a relevant academy lesson.
-3. Put runnable source in `samples/` and synthetic inputs in `fixtures/`. Share a Gradle build only when toolchains are compatible; isolate preview SDKs under `experimental/`.
+3. Put runnable source in `samples/` and synthetic inputs beside the code that uses them. Share a Gradle build only when toolchains are compatible; give incompatible or preview samples their own project under `samples/`.
 4. Supply exact setup and run commands, supported environments, expected output, and a clearly labelled fixture mode where useful.
 5. Exercise at least one failure and recovery path. Explain the decision being taught and give the learner an independent task.
 6. Record the commands/results in an evidence document. Include versions, verification date, tested devices where relevant, and the commit tested. A fixture result must not be presented as a live-provider result.
@@ -28,6 +28,6 @@ Do not publish private course material or third-party content without permission
 
 ## Where code belongs
 
-Feature folders under `recipes/` contain learning guides and link to the runnable project. Keep existing shared examples in `samples/recipe-lab`; a feature folder does not imply an independent Android Studio project. Give a future standalone sample a descriptive folder under `samples/` and its own setup instructions when it needs a different runtime or dependency set (for example, JVM ADK).
+Feature folders at the repository root contain learning guides and link to the runnable project. Keep existing shared examples in `samples/recipe-lab`; a feature folder does not imply an independent Android Studio project. Give a future standalone sample a descriptive folder under `samples/` and its own setup instructions when it needs a different runtime or dependency set (for example, JVM ADK).
 
 The catalog’s `track` field is the named feature folder, such as `gemini-chat` or `adk-android`. Add only actual recipes to the catalog; a planned feature landing page is not a tested recipe. Link the recipe from its feature README and keep its availability accurate.

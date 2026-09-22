@@ -12,34 +12,34 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [Gemini Live in Android](recipes/gemini-live/README.md) | Build real-time conversations with audio, interruptions, and reconnects. |
-| [ML Kit GenAI + Gemini Nano](recipes/ml-kit-genai/README.md) | Add on-device text and image features with capability checks. |
-| [On-device AI for Android](recipes/on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. |
-| [Gemini Chat for Android](recipes/gemini-chat/README.md) | Build chat, streaming responses, structured output, and tool calling. |
-| [Firebase AI Logic](recipes/firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. |
-| [Voice AI for Android](recipes/voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
-| [Multimodal Android apps](recipes/multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. |
+| [Gemini Live in Android](gemini-live/README.md) | Build real-time conversations with audio, interruptions, and reconnects. |
+| [ML Kit GenAI + Gemini Nano](ml-kit-genai/README.md) | Add on-device text and image features with capability checks. |
+| [On-device AI for Android](on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. |
+| [Gemini Chat for Android](gemini-chat/README.md) | Build chat, streaming responses, structured output, and tool calling. |
+| [Firebase AI Logic](firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. |
+| [Voice AI for Android](voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
+| [Multimodal Android apps](multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. |
 
 ### Build agents and connect tools
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [ADK for Kotlin](recipes/adk-kotlin/README.md) | Build JVM agents with tools, sessions, and orchestration. |
-| [ADK for Android](recipes/adk-android/README.md) | Put an agent in your Android app with lifecycle-aware sessions and local tools. |
-| [Koog for Kotlin](recipes/koog/README.md) | Build AI agents with the Kotlin-based Koog framework. |
-| [MCP for Android developers](recipes/mcp/README.md) | Connect an Android experience to tools through a controlled backend. |
-| [Android AppFunctions](recipes/appfunctions/README.md) | Expose app actions with typed inputs, permissions, and confirmation. |
+| [ADK for Kotlin](adk-kotlin/README.md) | Build JVM agents with tools, sessions, and orchestration. |
+| [ADK for Android](adk-android/README.md) | Put an agent in your Android app with lifecycle-aware sessions and local tools. |
+| [Koog for Kotlin](koog/README.md) | Build AI agents with the Kotlin-based Koog framework. |
+| [MCP for Android developers](mcp/README.md) | Connect an Android experience to tools through a controlled backend. |
+| [Android AppFunctions](appfunctions/README.md) | Expose app actions with typed inputs, permissions, and confirmation. |
 
 ### Learn the foundations and ship your app
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [AI for Android — start here](recipes/ai-fundamentals/README.md) | Learn models, prompts, and when to choose cloud or on-device AI. |
-| [Production AI on Android](recipes/production-ai/README.md) | Handle failures, evaluation, privacy, costs, and rollout. |
-| [Gemini in Android Studio](recipes/gemini-in-android-studio/README.md) | Use AI assistance and Agent Mode to implement and debug features. |
-| [Android CLI](recipes/android-cli/README.md) | Build and verify Android projects from the terminal. |
-| [Android Skills](recipes/android-skills/README.md) | Use Android development skills to guide and check project changes. |
-| [Create agent skills for Android](recipes/agent-skills/README.md) | Write reusable workflows for your coding agent. |
+| [AI for Android — start here](ai-fundamentals/README.md) | Learn models, prompts, and when to choose cloud or on-device AI. |
+| [Production AI on Android](production-ai/README.md) | Handle failures, evaluation, privacy, costs, and rollout. |
+| [Gemini in Android Studio](gemini-in-android-studio/README.md) | Use AI assistance and Agent Mode to implement and debug features. |
+| [Android CLI](android-cli/README.md) | Build and verify Android projects from the terminal. |
+| [Android Skills](android-skills/README.md) | Use Android development skills to guide and check project changes. |
+| [Create agent skills for Android](agent-skills/README.md) | Write reusable workflows for your coding agent. |
 
 ## Try the code
 
@@ -49,12 +49,12 @@ Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with AD
 
 | Example | What you can try |
 | --- | --- |
-| [Streaming in Compose](recipes/gemini-chat/fixture-streaming-ui/README.md) | Display a response as it arrives. |
-| [Firebase AI Logic setup](recipes/firebase-ai-logic/firebase-first-feature/README.md) | Explore the integration and configure your Firebase project. |
-| [Cancel a response](recipes/gemini-chat/lifecycle-cancel-stream/README.md) | Stop a request and prevent old results from updating the screen. |
-| [Structured output](recipes/gemini-chat/validated-extraction/README.md) | Turn model output into validated app data. |
-| [Retries and offline behavior](recipes/production-ai/bounded-recovery/README.md) | Try timeouts, errors, and recovery. |
-| [ADK tool approval](recipes/adk-android/adk-safe-tool/README.md) | Approve or reject an agent’s proposed action. |
+| [Streaming in Compose](gemini-chat/fixture-streaming-ui/README.md) | Display a response as it arrives. |
+| [Firebase AI Logic setup](firebase-ai-logic/firebase-first-feature/README.md) | Explore the integration and configure your Firebase project. |
+| [Cancel a response](gemini-chat/lifecycle-cancel-stream/README.md) | Stop a request and prevent old results from updating the screen. |
+| [Structured output](gemini-chat/validated-extraction/README.md) | Turn model output into validated app data. |
+| [Retries and offline behavior](production-ai/bounded-recovery/README.md) | Try timeouts, errors, and recovery. |
+| [ADK tool approval](adk-android/adk-safe-tool/README.md) | Approve or reject an agent’s proposed action. |
 
 These examples are tested with simulated model responses. Live Firebase inference and real-model ADK reasoning are not yet verified. Other feature folders are marked **Planned** and link to their academy learning paths. See [test results and limitations](docs/verification/v0.1.0-fixtures.md).
 
@@ -62,35 +62,34 @@ These examples are tested with simulated model responses. Live Firebase inferenc
 
 ```text
 android-ai-cookbook/
-├── recipes/                  # Browse by feature or workflow
-│   ├── gemini-chat/
-│   ├── gemini-live/
-│   ├── ml-kit-genai/
-│   ├── on-device-ai/
-│   ├── firebase-ai-logic/
-│   ├── adk-kotlin/
-│   ├── adk-android/
-│   ├── koog/
-│   ├── mcp/
-│   ├── appfunctions/
-│   ├── voice-ai/
-│   ├── multimodal-ai/
-│   ├── ai-fundamentals/
-│   ├── production-ai/
-│   ├── gemini-in-android-studio/
-│   ├── android-cli/
-│   ├── android-skills/
-│   └── agent-skills/
-├── samples/recipe-lab/        # Android Studio project: six runnable examples
-├── docs/                     # Setup, screenshots, and verification
-└── catalog/recipes.json      # Implemented recipe inventory
+├── adk-android/
+├── adk-kotlin/
+├── agent-skills/
+├── ai-fundamentals/
+├── android-cli/
+├── android-skills/
+├── appfunctions/
+├── firebase-ai-logic/
+├── gemini-chat/
+├── gemini-in-android-studio/
+├── gemini-live/
+├── koog/
+├── mcp/
+├── ml-kit-genai/
+├── multimodal-ai/
+├── on-device-ai/
+├── production-ai/
+├── voice-ai/
+├── samples/recipe-lab/        # Runnable Android Studio project
+├── docs/                     # Setup, feature index, and verification
+└── scripts/                  # Maintenance checks
 ```
 
-Browse [all feature guides and their status](recipes/README.md). Open `samples/recipe-lab` in Android Studio to run the current examples.
+Browse [all feature guides and their status](docs/features.md). Open `samples/recipe-lab` in Android Studio to run the current examples.
 
 ## New to Android + AI?
 
-Start with [AI for Android fundamentals](recipes/ai-fundamentals/README.md), try [streaming in Compose](recipes/gemini-chat/fixture-streaming-ui/README.md), then choose the topic for the app you want to build.
+Start with [AI for Android fundamentals](ai-fundamentals/README.md), try [streaming in Compose](gemini-chat/fixture-streaming-ui/README.md), then choose the topic for the app you want to build.
 
 ## Help grow the cookbook
 

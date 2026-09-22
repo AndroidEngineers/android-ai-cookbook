@@ -23,7 +23,7 @@ def local_path(value, field):
     return p
 
 def validate():
-    entries = json.loads((ROOT / 'catalog/recipes.json').read_text())
+    entries = json.loads((ROOT / 'docs/recipes.json').read_text())
     require(isinstance(entries, list) and entries, 'catalog must be a nonempty list')
     ids = set()
     published = 0
@@ -36,7 +36,7 @@ def validate():
         for field in ['title', 'track', 'owner']:
             require(isinstance(r.get(field), str) and r[field].strip(), f'{ident}: missing {field}')
         require(r.get('status') in STATUSES, f'{ident}: invalid status')
-        track = local_path('recipes/' + r['track'], ident + '.track')
+        track = local_path(r['track'], ident + '.track')
         require(track.is_dir(), f'{ident}: track must be a directory')
         doc = local_path(r.get('doc_path'), ident + '.doc_path')
         require(doc.is_file() and doc.is_relative_to(track), f'{ident}: recipe documentation must be inside its track')
