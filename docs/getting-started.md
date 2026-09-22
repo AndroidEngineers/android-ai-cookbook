@@ -1,5 +1,7 @@
 # Getting started
 
+Choose a topic from the [feature index](../recipes/README.md), which distinguishes available examples from planned samples.
+
 ## Run a recipe
 
 Start with [Recipe Lab](../samples/recipe-lab/README.md). It contains six tabs and runs offline using synthetic fixtures after build dependencies have been downloaded. You need JDK 17, SDK 36, and an API 26+ emulator or device. There is no root Gradle project: open `samples/recipe-lab` in Android Studio.

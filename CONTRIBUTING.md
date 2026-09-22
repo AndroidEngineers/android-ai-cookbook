@@ -4,7 +4,7 @@ Choose one learner outcome from the catalog or open a recipe request. Keep the f
 
 ## Authoring workflow
 
-1. Copy [the recipe template](docs/recipe-template.md) into the matching track.
+1. Copy [the recipe template](docs/recipe-template.md) into `recipes/<feature>/<recipe-id>/README.md`. Choose a named feature from the [feature index](recipes/README.md).
 2. Add a unique catalog entry with status `draft`. Assign an owner and link a relevant academy lesson.
 3. Put runnable source in `samples/` and synthetic inputs in `fixtures/`. Share a Gradle build only when toolchains are compatible; isolate preview SDKs under `experimental/`.
 4. Supply exact setup and run commands, supported environments, expected output, and a clearly labelled fixture mode where useful.
@@ -25,3 +25,9 @@ A maintainer coordinates an immutable release tag before a recipe is promoted to
 - Claims match the recorded evidence. Do not label preview APIs as generally available without checking current official documentation.
 
 Do not publish private course material or third-party content without permission. Be respectful and specific when discussing contributions. External pull requests should use deterministic fixtures without access to production secrets.
+
+## Where code belongs
+
+Feature folders under `recipes/` contain learning guides and link to the runnable project. Keep existing shared examples in `samples/recipe-lab`; a feature folder does not imply an independent Android Studio project. Give a future standalone sample a descriptive folder under `samples/` and its own setup instructions when it needs a different runtime or dependency set (for example, JVM ADK).
+
+The catalog’s `track` field is the named feature folder, such as `gemini-chat` or `adk-android`. Add only actual recipes to the catalog; a planned feature landing page is not a tested recipe. Link the recipe from its feature README and keep its availability accurate.
