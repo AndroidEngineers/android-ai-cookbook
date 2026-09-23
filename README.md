@@ -53,6 +53,28 @@ Each sample is an independent Android Studio project, focused on one Android + A
 <p><sub>Recipes work offline. Voice uses your own Gemini key entered in the debug app; release voice is not yet available. Screenshot shows the real app before starting voice. Camera and tools are future extensions.</sub></p>
 </td>
 </tr>
+<tr>
+<td width="260" align="center">
+<a href="gemini-chat/README.md"><img src="gemini-chat/docs/screenshots/home-emulator.png" width="240" alt="PocketChat running on Android, with a blue home screen, New chat, starter prompts, and saved conversations" /></a>
+</td>
+<td valign="top">
+<h3>PocketChat</h3>
+<p><strong>Explore ideas together.</strong></p>
+<p>An Android Engineers AI learning companion: ask questions, watch Gemini answers stream, continue the conversation, and save useful ideas. Explore our roadmaps, codelabs, courses, and optional 1:1 mentorship through a curated resource directory.</p>
+<p><strong>Topic:</strong> Gemini Chat for Android<br />
+<strong>Level:</strong> Intermediate conversation and streaming integration<br />
+<strong>Status:</strong> Runnable core · dedicated roadmap and codelab planned</p>
+<ul>
+<li>Direct Gemini text streaming over SSE, without Firebase</li>
+<li>Multi-turn context, Stop/Retry, and stale-response protection</li>
+<li>Room-backed history, saved answers, and draft recovery</li>
+<li>Android Engineers system instructions and curated learning links</li>
+<li>Jetpack Compose, Material 3, MVVM, and light/dark themes</li>
+</ul>
+<p><a href="gemini-chat/README.md">Browse &amp; run →</a> · <a href="gemini-chat/docs/learning-plan.md">Learning plan</a> · <a href="gemini-chat/docs/architecture.md">Architecture</a></p>
+<p><sub>Chat uses your own Gemini key entered in the debug app. History works offline. Screenshot shows the actual home screen before the branding update. Structured takeaways, tool calling, and production cloud access are future milestones.</sub></p>
+</td>
+</tr>
 </table>
 
 ## What do you want to build?
