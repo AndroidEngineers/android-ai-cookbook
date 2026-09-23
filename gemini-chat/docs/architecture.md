@@ -1,6 +1,12 @@
 # PocketChat architecture decisions
 
-Proposed architecture; names below are planned contracts, not implemented classes.
+Target architecture. The initial implementation uses ChatRepository, ChatService, ChatViewModel, and RoomLibraryStore. The advanced tool/backend nodes below remain planned.
+
+Initial persistence decision: Room stores one serialized Library aggregate in an atomic row. This keeps the first slice small and supports local search in memory. It is suitable for a learning-sized collection, not a large archive; normalize per-conversation/message entities before adding large histories or indexed search. Writes are conflated and partial answers checkpoint no more than four times per second.
+
+Initial navigation uses a selected-conversation state in SavedStateHandle and a width-based list/detail layout. Navigation 3 scene integration remains a later adaptive milestone; no experimental layout APIs are introduced.
+
+Retry currently replaces the final incomplete turn while assigning a fresh in-memory attempt identity. Durable attempt audit history is a later schema change. Context limiting currently uses a conservative 24,000-character budget, explicitly not exact token counting.
 
 ```mermaid
 flowchart TD

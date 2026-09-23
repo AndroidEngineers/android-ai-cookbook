@@ -1,6 +1,6 @@
 # PocketChat app brief
 
-Status: **Planned — design and implementation plan prepared; no runnable app yet.**
+Status: **Building — the initial Android implementation exists locally. See verification.md for tested behavior and remaining work.**
 
 PocketChat · Gemini Chat for Android · `com.androidengineers.pocketchat`
 
@@ -59,4 +59,4 @@ Required verification resources: Android SDK/JDK, emulator, physical phone with 
 
 Follow [design](design.md), [architecture](architecture.md), and [learning plan](learning-plan.md). Build order is design → real streaming slice → durable chat → advanced chapters → clean-checkout learning walkthrough. Estimate remaining effort after the streaming slice, at 10–15 hours/week. Do not declare the learning journey released until source, screenshots, roadmap, codelab, and live links are verified.
 
-Current evidence: design concept and written contracts only. No Android build, device test, inference test, or published PocketChat codelab exists yet.
+Current evidence is recorded in [verification.md](verification.md). The initial Android slice is implemented; live-model acceptance and the published PocketChat codelab remain outstanding.

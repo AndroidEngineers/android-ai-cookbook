@@ -1,6 +1,6 @@
 # App implementation order
 
-One dedicated app for each of the 24 topics. **PocketCards and PocketCook are Building**; the other 22 apps are Planned. The naming family is **Pocket**: PocketCards, PocketCook, and PocketChat are selected; other names remain undecided. PocketChat is the next implementation target; its design and learning plan are prepared, with no runnable app yet. PocketCook release and learning verification remain tracked separately. This is build order, not a promise that all learners must complete every earlier topic.
+One dedicated app for each of the 24 topics. **PocketCards, PocketCook, and PocketChat are Building**; the other 21 apps are Planned. The naming family is **Pocket**: PocketCards, PocketCook, and PocketChat are selected; other names remain undecided. PocketChat has a runnable core chat implementation; its website roadmap and codelab are next. PocketCook release and learning verification remain tracked separately. This is build order, not a promise that all learners must complete every earlier topic.
 
 Work on one app's complete learning journey at a time. At 10–15 hours/week, estimate each app after its first vertical slice and device/API feasibility check; do not assign speculative completion dates to all 24.
 

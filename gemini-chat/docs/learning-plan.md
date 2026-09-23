@@ -46,4 +46,4 @@ Use a recorded prompt set: explain Kotlin coroutine cancellation; compare two ap
 
 ## Remaining work
 
-No app code, source tags, finished lessons, finished codelab, device evidence, or production backend yet. These are explicit delivery gates, not completed features.
+The initial app slice now exists locally; see [verification](verification.md) for build and emulator evidence. Live Gemini acceptance, advanced features, source tags, finished lessons/codelab, and a production backend remain delivery gates.

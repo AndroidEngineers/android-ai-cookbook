@@ -1,13 +1,13 @@
 # Browse the cookbook
 
-Choose a topic below. **PocketCards and PocketCook are Building**; the other dedicated apps are Planned. Each top-level topic folder will contain its own project; PocketCards and PocketCook include Android projects; the other folders currently contain guides and resources.
+Choose a topic below. **PocketCards, PocketCook, and PocketChat are Building**; the other dedicated apps are Planned. Each top-level topic folder will contain its own project; PocketCards, PocketCook, and PocketChat include Android projects; the other folders currently contain guides and resources.
 
 | Feature | Build this | Code today |
 | --- | --- | --- |
 | [Gemini Live in Android](../gemini-live/README.md) | PocketCook: direct Gemini Live voice and local cooking flow; author-confirmed voice; extended acceptance pending. | Building |
 | [ML Kit GenAI + Gemini Nano](../ml-kit-genai/README.md) | Add on-device text and image features with capability checks. | Planned |
 | [On-device AI for Android](../on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. | Planned |
-| [Gemini Chat for Android](../gemini-chat/README.md) | PocketChat (planned): streaming conversations, local history, saved answers, and controlled tool actions. | Planned |
+| [Gemini Chat for Android](../gemini-chat/README.md) | PocketChat: streaming, Stop/Retry, saved answers, and the Android Engineers AI guide. | Building |
 | [Firebase AI Logic](../firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. | Planned |
 | [Voice AI for Android](../voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. | Planned |
 | [Multimodal Android apps](../multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. | Planned |

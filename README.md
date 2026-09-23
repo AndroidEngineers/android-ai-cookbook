@@ -57,7 +57,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 
 ## What do you want to build?
 
-**24 topics · 2 runnable samples · 22 planned apps.** Start with PocketCards for AI fundamentals or PocketCook for realtime voice. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
+**24 topics · 3 runnable samples · 21 planned apps.** Start with PocketCards for AI fundamentals, PocketCook for realtime voice, or PocketChat for streaming conversations. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
 
 ### Add AI to your Android app
 
@@ -66,7 +66,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 | [Gemini Live in Android](gemini-live/README.md) | PocketCook: direct voice conversations, PCM audio, interruptions, and explicit session restart. |
 | [ML Kit GenAI + Gemini Nano](ml-kit-genai/README.md) | Add on-device text and image features with capability checks. |
 | [On-device AI for Android](on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. |
-| [Gemini Chat for Android](gemini-chat/README.md) | PocketChat (planned): streaming conversations, local history, saved answers, and controlled tool actions. |
+| [Gemini Chat for Android](gemini-chat/README.md) | PocketChat: streaming conversations, Stop/Retry, local history, saved answers, and an Android Engineers AI guide. |
 | [Firebase AI Logic](firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. |
 | [Voice AI for Android](voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
 | [Multimodal Android apps](multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. |
