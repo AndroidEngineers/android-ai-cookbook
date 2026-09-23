@@ -1,6 +1,6 @@
 # App implementation order
 
-One dedicated app for each of the 24 topics. **PocketCards and PocketCook are Building**; the other 22 apps are Planned. The naming family is **Pocket**: PocketCards and PocketCook are selected; other names remain undecided. PocketCook is next to implement, with audio prerequisites taught inside its own learning journey. This is build order, not a promise that all learners must complete every earlier topic.
+One dedicated app for each of the 24 topics. **PocketCards and PocketCook are Building**; the other 22 apps are Planned. The naming family is **Pocket**: PocketCards, PocketCook, and PocketChat are selected; other names remain undecided. PocketChat is the next implementation target; its design and learning plan are prepared, with no runnable app yet. PocketCook release and learning verification remain tracked separately. This is build order, not a promise that all learners must complete every earlier topic.
 
 Work on one app's complete learning journey at a time. At 10–15 hours/week, estimate each app after its first vertical slice and device/API feasibility check; do not assign speculative completion dates to all 24.
 
@@ -8,7 +8,7 @@ Work on one app's complete learning journey at a time. At 10–15 hours/week, es
 | --- | --- | --- | --- | --- |
 | 1 | [ai-fundamentals](../ai-fundamentals/README.md) | PocketCards — flashcard generator | None; Kotlin/Compose basics | One validated AI request, editable cards, save/delete, failure recovery |
 | 2 | [gemini-live](../gemini-live/README.md) | PocketCook — hands-free cooking companion | Kotlin/Compose/coroutines; audio basics included | Direct Gemini Live without Firebase; realtime audio, interruption, reconnect and lifecycle |
-| 3 | [gemini-chat](../gemini-chat/README.md) | Streaming messenger | ai-fundamentals | Conversation ownership, streaming, cancellation, history |
+| 3 | [gemini-chat](../gemini-chat/README.md) | PocketChat — conversation workspace | ai-fundamentals | Conversation ownership, streaming, cancellation, history |
 | 4 | [firebase-ai-logic](../firebase-ai-logic/README.md) | Ingredient meal planner | gemini-chat | Protected mobile inference, structured recipes, saved plans |
 | 5 | [multimodal-ai](../multimodal-ai/README.md) | Camera curiosity app | firebase-ai-logic | Image selection, media preparation, grounded follow-up UI |
 | 6 | [ml-kit-vision](../ml-kit-vision/README.md) | Receipt and barcode organizer | ai-fundamentals | Camera input, OCR/barcodes, correction, local storage |
@@ -34,7 +34,7 @@ Work on one app's complete learning journey at a time. At 10–15 hours/week, es
 ## Delivery waves
 
 1. **1–2: flagship learning journeys.** Complete PocketCards release checks, then PocketCook. PocketCook teaches its own audio prerequisites; camera is an advanced chapter. Follow [the PocketCook plan](../gemini-live/docs/app-brief.md).
-2. **3–5: cloud conversations and vision.** Streaming chat, protected inference and multimodal interaction.
+2. **3–5: cloud conversations and vision.** Start with [the PocketChat plan](../gemini-chat/docs/app-brief.md): streaming chat, then protected inference and multimodal interaction.
 3. **6–11: vision and local intelligence.** Validate physical-device access and model capabilities before provider-specific implementation.
 4. **12: voice notes.** Recording, transcription and action extraction as a dedicated asynchronous voice workflow.
 5. **13–18: actions and agents.** Tool validation, authorization, JVM boundaries and mobile integrations. AppFunctions availability is a feasibility gate.

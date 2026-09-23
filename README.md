@@ -66,7 +66,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 | [Gemini Live in Android](gemini-live/README.md) | PocketCook: direct voice conversations, PCM audio, interruptions, and explicit session restart. |
 | [ML Kit GenAI + Gemini Nano](ml-kit-genai/README.md) | Add on-device text and image features with capability checks. |
 | [On-device AI for Android](on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. |
-| [Gemini Chat for Android](gemini-chat/README.md) | Build chat, streaming responses, structured output, and tool calling. |
+| [Gemini Chat for Android](gemini-chat/README.md) | PocketChat (planned): streaming conversations, local history, saved answers, and controlled tool actions. |
 | [Firebase AI Logic](firebase-ai-logic/README.md) | Connect an Android app to Gemini with Firebase and App Check. |
 | [Voice AI for Android](voice-ai/README.md) | Build speech-to-text, AI responses, text-to-speech, and turn-taking. |
 | [Multimodal Android apps](multimodal-ai/README.md) | Combine camera, images, audio, and text in an AI feature. |
