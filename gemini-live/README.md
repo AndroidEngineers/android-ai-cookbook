@@ -129,6 +129,6 @@ Unit tests exercise protocol validation, duplicate starts, stale callbacks, time
 - [Asset provenance](docs/assets.md)
 - [Verification results and remaining work](docs/verification.md)
 
-[Gemini Live in Android learning path](https://www.androidengineers.in/roadmap/gemini-live-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index). PocketCook-specific lessons and codelab are planned, not published.
+[Gemini Live in Android learning path](https://www.androidengineers.in/roadmap/gemini-live-android?utm_source=github&utm_medium=repository&utm_campaign=android_ai_cookbook&utm_content=topic_index). PocketCook-specific lessons and the 11-step codelab are implemented in the website repository; deployment is pending. Browse the [codelab source](https://github.com/anandwana001/android-website-revamp/blob/21ff713/src/data/pocketcook-codelab.ts) and [course study guide source](https://github.com/anandwana001/android-website-revamp/blob/21ff713/src/content/articles/gemini-live-android/pocketcook-course-study-guide.md) while the academy update is being deployed.
 
 [Cookbook home](../README.md)

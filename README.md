@@ -31,17 +31,39 @@ Each sample is an independent Android Studio project, focused on one Android + A
 <p><sub>Manual cards and the sample deck work without setup. AI generation uses your own Firebase project. Screenshots show the running app.</sub></p>
 </td>
 </tr>
+<tr>
+<td width="260" align="center">
+<a href="gemini-live/README.md"><img src="gemini-live/docs/screenshots/cooking-device-dark.png" width="240" alt="PocketCook running on an Android phone, with recipe steps and a Talk to PocketCook voice action" /></a>
+</td>
+<td valign="top">
+<h3>PocketCook</h3>
+<p><strong>A little help, hands-free.</strong></p>
+<p>A cooking companion: choose a recipe, follow the steps, and ask Gemini for spoken guidance while you cook.</p>
+<p><strong>Topic:</strong> Gemini Live in Android<br />
+<strong>Level:</strong> Intermediate realtime voice integration<br />
+<strong>Status:</strong> Runnable core · academy update awaiting deployment</p>
+<ul>
+<li>Direct Gemini Live over WebSocket, without Firebase</li>
+<li>Microphone capture, PCM streaming, and speaker playback</li>
+<li>Interruptions, mute, transcripts, and lifecycle cleanup</li>
+<li>Jetpack Compose, Material 3, MVVM, and offline recipe progress</li>
+<li>Audio regression tests, physical-device checks, and light/dark themes</li>
+</ul>
+<p><a href="gemini-live/README.md">Browse &amp; run →</a> · <a href="https://www.androidengineers.in/roadmap/gemini-live-android?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=android_ai_cookbook&amp;utm_content=pocketcook_showcase">Learning roadmap</a> · <a href="https://github.com/anandwana001/android-website-revamp/blob/21ff713/src/data/pocketcook-codelab.ts">Codelab source (deployment pending)</a></p>
+<p><sub>Recipes work offline. Voice uses your own Gemini key entered in the debug app; release voice is not yet available. Screenshot shows the real app before starting voice. Camera and tools are future extensions.</sub></p>
+</td>
+</tr>
 </table>
 
 ## What do you want to build?
 
-**24 topics · 2 apps in development · 22 planned apps.** PocketCards has a verified live generation flow; its full academy course and build-from-starter codelab are still in progress. PocketCook has a runnable core with author-confirmed live voice and automated device audio checks; extended live acceptance and learning materials remain in progress. Explore the remaining topics below for their planned features and learning resources.
+**24 topics · 2 runnable samples · 22 planned apps.** Start with PocketCards for AI fundamentals or PocketCook for realtime voice. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
 
 ### Add AI to your Android app
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [Gemini Live in Android](gemini-live/README.md) | Build real-time conversations with audio, interruptions, and reconnects. |
+| [Gemini Live in Android](gemini-live/README.md) | PocketCook: direct voice conversations, PCM audio, interruptions, and explicit session restart. |
 | [ML Kit GenAI + Gemini Nano](ml-kit-genai/README.md) | Add on-device text and image features with capability checks. |
 | [On-device AI for Android](on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. |
 | [Gemini Chat for Android](gemini-chat/README.md) | Build chat, streaming responses, structured output, and tool calling. |
