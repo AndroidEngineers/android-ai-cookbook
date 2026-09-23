@@ -1,10 +1,10 @@
 # Browse the cookbook
 
-Choose a topic below. **PocketCards is Building**; the other dedicated apps are Planned. Each top-level topic folder will contain its own project; PocketCards includes its Android project; the other folders currently contain guides and resources.
+Choose a topic below. **PocketCards and PocketCook are Building**; the other dedicated apps are Planned. Each top-level topic folder will contain its own project; PocketCards and PocketCook include Android projects; the other folders currently contain guides and resources.
 
 | Feature | Build this | Code today |
 | --- | --- | --- |
-| [Gemini Live in Android](../gemini-live/README.md) | Build real-time conversations with audio, interruptions, and reconnects. | Planned |
+| [Gemini Live in Android](../gemini-live/README.md) | PocketCook: direct Gemini Live voice and local cooking flow; author-confirmed voice; extended acceptance pending. | Building |
 | [ML Kit GenAI + Gemini Nano](../ml-kit-genai/README.md) | Add on-device text and image features with capability checks. | Planned |
 | [On-device AI for Android](../on-device-ai/README.md) | Run models locally and understand downloads, memory, and device support. | Planned |
 | [Gemini Chat for Android](../gemini-chat/README.md) | Build chat, streaming responses, structured output, and tool calling. | Planned |

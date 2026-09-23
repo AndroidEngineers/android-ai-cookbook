@@ -35,7 +35,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 
 ## What do you want to build?
 
-**24 topics · 1 runnable app · 23 planned apps.** PocketCards has a verified live generation flow; its full academy course and build-from-starter codelab are still in progress. Explore the remaining topics below for their planned features and learning resources.
+**24 topics · 2 apps in development · 22 planned apps.** PocketCards has a verified live generation flow; its full academy course and build-from-starter codelab are still in progress. PocketCook has a runnable core with author-confirmed live voice and automated device audio checks; extended live acceptance and learning materials remain in progress. Explore the remaining topics below for their planned features and learning resources.
 
 ### Add AI to your Android app
 
