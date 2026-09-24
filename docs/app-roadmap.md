@@ -1,6 +1,10 @@
 # App implementation order
 
-One dedicated app for each of the 24 topics. **PocketCards, PocketCook, and PocketChat are Building**; the other 21 apps are Planned. The naming family is **Pocket**: PocketCards, PocketCook, and PocketChat are selected; other names remain undecided. PocketChat has a runnable core chat implementation; its website roadmap and codelab are next. PocketCook release and learning verification remain tracked separately. This is build order, not a promise that all learners must complete every earlier topic.
+## Current addition: PocketCommunity
+
+[A2UI / PocketCommunity](../a2ui/README.md) is the 25th topic, added at the user’s request. Live Gemini event → venue → preparation flow is verified on a physical phone. Next: evaluate broader prompts and deliver the roadmap/codelab. Status: Live-agent Preview, not a released learning journey. The original ordering below predates this addition.
+
+The original plan covers 24 topics; A2UI brings the collection to 25. **PocketCards, PocketCook, and PocketChat are Building**; **PocketStories is a preview**, and the other 20 original topics are Planned. The naming family is **Pocket**: PocketCards, PocketCook, PocketChat, PocketStories, and PocketCommunity are selected; remaining names are undecided. PocketChat has a runnable core chat implementation; its website roadmap and codelab are next. PocketCook release and learning verification remain tracked separately. This is build order, not a promise that all learners must complete every earlier topic.
 
 Work on one app's complete learning journey at a time. At 10–15 hours/week, estimate each app after its first vertical slice and device/API feasibility check; do not assign speculative completion dates to all 24.
 

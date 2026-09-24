@@ -4,6 +4,8 @@
 
 Want to add Gemini Live, use ML Kit, run AI on-device, or build an agent with ADK? Explore the runnable samples, then pick a topic to follow its learning path.
 
+**New preview:** [PocketCommunity — A2UI + DevEarth](a2ui/README.md): native event and preparation surfaces inside one conversation. Live Gemini agent required; key stays on the companion server.
+
 ## Sample apps
 
 Each sample is an independent Android Studio project, focused on one Android + AI topic.
@@ -97,11 +99,34 @@ Each sample is an independent Android Studio project, focused on one Android + A
 <p><sub>Actual app screenshot; illustration is bundled artwork. No successful AI story generation is claimed. Build and automated tests pass; the tested emulator hits a GPU buffer limit. Physical-device generation and the academy codelab remain unverified/unpublished.</sub></p>
 </td>
 </tr>
+<tr>
+<td width="380" align="center">
+<a href="a2ui/README.md"><img src="a2ui/docs/screenshots/discovery.png" width="180" alt="PocketCommunity rendering Gemini-generated DevEarth event discovery on a physical Android phone" /></a>
+<a href="a2ui/README.md"><img src="a2ui/docs/screenshots/preparation.png" width="180" alt="PocketCommunity retaining a checked item in a Gemini-refined preparation checklist" /></a>
+</td>
+<td valign="top">
+<h3>PocketCommunity</h3>
+<p><strong>Find your people. Get ready for your next developer event.</strong></p>
+<p>Discover DevEarth events, explore venues, and prepare for your visit in one conversation. Gemini composes interactive native UI from a restricted component catalog.</p>
+<p><strong>Topic:</strong> A2UI and agent-generated Android UI<br />
+<strong>Level:</strong> Intermediate agent and UI integration<br />
+<strong>Status:</strong> Live-agent preview · physical-phone flow verified · roadmap and codelab planned</p>
+<ul>
+<li>Official AndroidX A2UI parser, processor, and Material component catalog</li>
+<li>Surfaces, component trees, data bindings, and outgoing actions</li>
+<li>Conversation context and checkbox state sent back to Gemini</li>
+<li>Validated component graphs, controlled links, setup and retry handling</li>
+<li>Server-only Gemini credentials and an inspectable protocol flow</li>
+</ul>
+<p><a href="a2ui/README.md">Browse &amp; run →</a> · <a href="a2ui/README.md#how-a2ui-becomes-a-visible-card">How A2UI works</a> · <a href="a2ui/docs/verification.md">Verification &amp; limitations</a></p>
+<p><sub>Actual live-generated UI on a physical Android phone. Artwork is a bundled illustration. Requires the companion server with your own Gemini key; no scripted runtime fallback. Production hosting and durable conversations are not implemented.</sub></p>
+</td>
+</tr>
 </table>
 
 ## What do you want to build?
 
-**24 topics · 3 runnable samples · 1 preview · 20 planned apps.** Start with PocketCards for AI fundamentals, PocketCook for realtime voice, or PocketChat for streaming conversations. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
+**25 topics · 3 runnable samples · 2 previews · 20 planned apps.** Start with PocketCards for AI fundamentals, PocketCook for realtime voice, or PocketChat for streaming conversations. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
 
 ### Add AI to your Android app
 
@@ -130,6 +155,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 
 | Topic | What you’ll learn |
 | --- | --- |
+| [A2UI for Android](a2ui/README.md) | PocketCommunity (Live-agent preview): Gemini-composed native UI, component catalogs, bound checklists, and action feedback. |
 | [ADK for Kotlin](adk-kotlin/README.md) | Build JVM agents with tools, sessions, and orchestration. |
 | [ADK for Android](adk-android/README.md) | Put an agent in your Android app with lifecycle-aware sessions and local tools. |
 | [Koog for Kotlin](koog/README.md) | Build AI agents with the Kotlin-based Koog framework. |
@@ -186,7 +212,7 @@ Start with [AI for Android fundamentals](ai-fundamentals/README.md), then choose
 
 ## Build plan and engineering
 
-Follow the [24-app implementation order](docs/app-roadmap.md), [engineering standards](docs/engineering-standards.md), and [roadmap/codelab learning contract](docs/learning-contract.md). Development uses [official Android skills and project-local guidance](docs/skills.md).
+Follow the [app implementation order](docs/app-roadmap.md), [engineering standards](docs/engineering-standards.md), and [roadmap/codelab learning contract](docs/learning-contract.md). Development uses [official Android skills and project-local guidance](docs/skills.md).
 
 ## Help grow the cookbook
 

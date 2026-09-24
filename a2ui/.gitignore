@@ -1,0 +1,7 @@
+/.gradle/
+/.kotlin/
+/local.properties
+/**/build/
+/server/.env
+/server/node_modules/
+/.idea/
