@@ -75,11 +75,33 @@ Each sample is an independent Android Studio project, focused on one Android + A
 <p><sub>Chat uses your own Gemini key entered in the debug app. History works offline. Screenshot shows the actual home screen before the branding update. Structured takeaways, tool calling, and production cloud access are future milestones.</sub></p>
 </td>
 </tr>
+<tr>
+<td width="260" align="center">
+<a href="gemma/README.md"><img src="gemma/docs/screenshots/bookshelf.png" width="240" alt="PocketStories preview showing its light-theme bookshelf and bundled story illustration" /></a>
+</td>
+<td valign="top">
+<h3>PocketStories</h3>
+<p><strong>Ordinary things. Extraordinary tales.</strong></p>
+<p>A camera-to-story app in development, exploring Gemma on Android with local model downloads and a private bookshelf.</p>
+<p><strong>Topic:</strong> Gemma on Android<br />
+<strong>Level:</strong> Intermediate on-device multimodal integration<br />
+<strong>Status:</strong> Building / Preview · end-to-end generation under validation</p>
+<ul>
+<li>CameraX capture, Photo Picker and bounded image preparation</li>
+<li>Resumable model downloads, SHA-256 verification and private storage</li>
+<li>LiteRT-LM integration, multimodal prompts, streaming and native cancellation</li>
+<li>Compose, MVVM, Room stories and draft checkpoints</li>
+<li>Model selection, hardware constraints and honest device verification</li>
+</ul>
+<p><a href="gemma/README.md">Explore the preview →</a> · <a href="gemma/docs/learning-plan.md">Learning plan</a> · <a href="gemma/docs/verification.md">Verification &amp; limitations</a></p>
+<p><sub>Actual app screenshot; illustration is bundled artwork. No successful AI story generation is claimed. Build and automated tests pass; the tested emulator hits a GPU buffer limit. Physical-device generation and the academy codelab remain unverified/unpublished.</sub></p>
+</td>
+</tr>
 </table>
 
 ## What do you want to build?
 
-**24 topics · 3 runnable samples · 21 planned apps.** Start with PocketCards for AI fundamentals, PocketCook for realtime voice, or PocketChat for streaming conversations. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
+**24 topics · 3 runnable samples · 1 preview · 20 planned apps.** Start with PocketCards for AI fundamentals, PocketCook for realtime voice, or PocketChat for streaming conversations. PocketCook's expanded lessons and codelab are committed in the website repository and awaiting deployment. Each app README documents setup, verification, and remaining limitations.
 
 ### Add AI to your Android app
 
@@ -97,7 +119,7 @@ Each sample is an independent Android Studio project, focused on one Android + A
 
 | Topic | What you’ll learn |
 | --- | --- |
-| [Gemma on Android](gemma/README.md) | Build an offline chat app with a downloadable open model. |
+| [Gemma on Android](gemma/README.md) | PocketStories (Preview): camera-to-story integration, verified model downloads, local persistence and hardware compatibility. |
 | [LiteRT and LiteRT-LM](litert/README.md) | Run custom models locally and understand the inference runtime. |
 | [RAG and embeddings](rag-and-embeddings/README.md) | Search personal notes and answer questions with source citations. |
 | [FunctionGemma and local tool calling](functiongemma/README.md) | Turn a natural-language request into an approved app action. |

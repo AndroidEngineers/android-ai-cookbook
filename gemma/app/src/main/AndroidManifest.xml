@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <uses-permission android:name="android.permission.CAMERA" />
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+ <application android:name=".StoriesApplication" android:usesCleartextTraffic="false" android:allowBackup="false" android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules" android:label="PocketStories" android:icon="@drawable/ic_book" android:theme="@style/AppTheme" android:supportsRtl="true">
+  <uses-native-library android:name="libOpenCL.so" android:required="false" />
+  <uses-native-library android:name="libvndksupport.so" android:required="false" />
+  <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+  </activity>
+ </application>
+</manifest>
